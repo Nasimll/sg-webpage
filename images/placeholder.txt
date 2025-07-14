@@ -1,0 +1,13 @@
+This directory would contain all the image files for the website.
+
+For a production version, you would need to add the following images:
+- logo.png
+- hero-image.jpg
+- commitment-1.jpg, commitment-2.jpg, commitment-3.jpg
+- class-1.jpg through class-5.jpg
+- banner-bg.jpg
+- testimonial-1.jpg, testimonial-2.jpg
+- community-bg.jpg
+- blog-1.jpg, blog-2.jpg, blog-3.jpg
+
+These images should match the style and content shown in the reference design.

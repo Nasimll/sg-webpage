@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadykov Group sp z.o.</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+</head>
+<body>
+    <!-- Combined Header and Hero Section -->
+<section class="hero-section">
+    <!-- Header -->
+<!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">  
+                    
+                    <a href="index.html"><img src="images/logo-safed.png"  ></a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#" class="active" data-i18n="nav_home">Главная</a></li>
+                        <li><a href="#about" data-i18n="nav_about">О нас</a></li>
+                        <li><a href="#pricing" data-i18n="nav_services">Услуги</a></li>
+                        <li><a href="#otziv" data-i18n="nav_reviews">Отзывы</a></li>
+                        <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                        <li><a href="#contact" data-i18n="btn_contact" id="btnn">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher" onclick="toggleLangDropdown(event)">
+                <div class="lang-select" data-i18n="language"></div>
+                <div class="lang-dropdown" id="langMenu">
+                <button onclick="setLanguage('en')"><i class="fi fi-gb"></i> EN</button>
+                <button onclick="setLanguage('ru')" ><i class="fi fi-ru"></i> RU</button>
+                <button onclick="setLanguage('pl')"><i class="fi fi-pl"></i> PL</button>
+                 </div>
+                </div>
+               <div class="header-cta">
+                    <a id="btnnone" href="#contact" class="btn btn-outline" data-i18n="btn_contact">Контакты</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Content -->
+    <div class="container" id="cont1">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-i18n="hero_title">Профессиональное трудоустройство <br><span class="highlight">в Польше</span></h1>
+                <p data-i18n="hero_desc">Мы помогаем найти легальную и стабильную работу, сопровождаем вас на каждом этапе — от подачи документов до выхода на работу.</p>
+                <div class="twobtn">
+                    <a href="#contact" class="btn btn-primary" id="btn" data-i18n="btn_find_job">Найти работу</a>
+                    <a href="#contact" class="btn btn-primary" id="btn2" data-i18n="btn_find_employees">Найти сотрудников</a>
+                </div>
+            </div>
+           
+           
+    </div>
+</section>
+
+    
+
+  <section class="commitment" id="about">
+  <div class="container">
+    <h2 class="section-title" data-i18n="about_title">Полный спектр услуг по трудоустройству и легализации для иностранцев</h2>
+    <p class="section-description" data-i18n="about_desc">Наша миссия — помочь людям, легально работать в Европе. Мы работаем с 2018 года и заслужили доверие тысяч работников и сотен работодателей.</p>
+    
+    <div class="commitment-cards">
+      <div class="commitment-card">
+        <img src="images/udt.jpg" alt="Personal Training" />
+        <div class="card-overlay">
+          <span class="card-tag" data-i18n="card_1">Ищете работу в Польше?</span>
+        </div>
+      </div>
+      <div class="commitment-card">
+        <img src="images/legal.jpg" alt="Group Classes" />
+        <div class="card-overlay">
+          <span class="card-tag" data-i18n="card_2">Вам нужна помощь в легализации в Польше?</span>
+        </div>
+      </div>
+      <div class="commitment-card">
+        <img src="images/sklad.jpg" alt="Nutrition Guidance" />
+        <div class="card-overlay">
+          <span class="card-tag" data-i18n="card_3">Вы ищете сотрудников?</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="timeline">
+  <div class="container">
+    <h2 class="section-title" data-i18n="timeline_title">Наш путь к совершенству</h2>
+    <div class="timeline-container">
+      <!-- Indicator -->
+      <div class="timeline-progress"></div>
+
+      <!-- Years -->
+      <div class="timeline-year active">
+        <span class="year">2022</span>
+        <div class="year-content">
+          <p data-i18n="timeline_2022">Основание агентства в Польше</p>
+        </div>
+      </div>
+      <div class="timeline-year">
+        <span class="year">2023</span>
+        <div class="year-content">
+          <p data-i18n="timeline_2023">1000+ трудоустроенных работников</p>
+        </div>
+      </div>
+      <div class="timeline-year">
+        <span class="year">2024</span>
+        <div class="year-content">
+          <p data-i18n="timeline_2024">Открытие отдела легализации</p>
+        </div>
+      </div>
+      <div class="timeline-year">
+        <span class="year">2025</span>
+        <div class="year-content">
+          <p data-i18n="timeline_2025">Цифровая платформа для онлайн-заявок</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container" id="eee">
+            <h2 class="section-title" data-i18n="services_title"> Услуги агентства<span class="highlight"> SADYKOV GROUP </span></h2>
+            
+            <div class="services-grid">
+                <div class="service-column">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3 data-i18n="services_1">Работа на заводах</h3>
+                        <p data-i18n="services_1_desc">Трудоустройство на ведущие заводы и производства Польши с официальным оформлением и достойной оплатой труда.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3 data-i18n="services_2">Работа на складах и производствах</h3>
+                        <p data-i18n="services_2_desc">Вакансии на крупных логистических комплексах и производственных линиях с возможностью карьерного роста.</p>
+                    </div>
+                </div>
+                
+                <div class="service-column">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-file-signature"></i>
+                        </div>
+                        <h3 data-i18n="services_3">Легализация в Варшаве</h3>
+                        <p data-i18n="services_3_desc">Полное сопровождение процесса легализации в Варшаве: оформление карты побыту, рабочей визы и других документов</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 data-i18n="services_4">Помощь с жильем</h3>
+                        <p data-i18n="services_4_desc">Содействие в поиске жилья рядом с местом работы на выгодных условиях для наших клиентов.</p>
+                    </div>
+                </div>
+                
+                <div class="service-column">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 data-i18n="services_5">Аутсорсинг HR</h3>
+                        <p data-i18n="services_5_desc">Берём на себя весь процесс подбора и оформления персонала.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h3 data-i18n="services_6">Аудит для агентств</h3>
+                        <p data-i18n="services_6_desc">Анализируем и оптимизируем ключевые процессы вашего агентства. Наш аудит помогает агентствам выйти на новый уровень качества и доверия.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+     <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <h2 class="section-title" data-i18n="statistics_title">Наши достижения</h2>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label" data-i18n="stats_1">Tрудоустроенных кандидатов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="stat-number"> 200+</div>
+                    <div class="stat-label" data-i18n="stats_2">довольных работодателей</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label" data-i18n="stats_3">успеха в легализации</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label" data-i18n="stats_3">вакансий ежемесячно</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <h2>SADYKOV GROUP</h2>
+                <h3 data-i18n="banner_subtitle">С нами все просто</h3>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+    <div class="container">
+        <h2 class="section-title" data-i18n="pricing_title">Спектр нашиx услуги</h2>
+        <div class="pricing-toggle">
+            <!-- <span class="active">Monthly</span>
+            <span>Yearly</span> -->
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3 class="plan-name" data-i18n="pricing_card_1_title">Помощь в трудоустройстве</h3>
+                <div class="plan-price">
+                    <span class="price" data-i18n="pricing_card_1_price">Бесплатно</span>
+                </div>
+                <ul class="plan-features">
+                    <li data-i18n="pricing_card_1_1">Доступ к актуальным вакансиям</li>
+                    <li data-i18n="pricing_card_1_2">Базовая консультация по трудоустройству</li>
+                    <li data-i18n="pricing_card_1_3">Помощь с оформлением</li>
+                    <li data-i18n="pricing_card_1_4">Онлайн-поддержка</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" data-i18n="pricing_svyaz">Связаться с нами</a>
+            </div>
+
+            <div class="pricing-card featured">
+                <h3 class="plan-name" data-i18n="pricing_card_2_title">Полный пакет</h3>
+                <div class="plan-price">
+                    <span class="price" data-i18n="pricing_card_2_price">oт 500</span>
+                    <span class="period" data-i18n="pricing_card_2_period">PLN</span>
+                </div>
+                <ul class="plan-features">
+                    <li data-i18n="pricing_card_2_1">Подготовка полного пакета документов для подачи на карту побыту</li>
+                    <li data-i18n="pricing_card_2_2">Консультации по выбору оптимального типа разрешения на пребывание</li>
+                    <li data-i18n="pricing_card_2_3">Поддержка на каждом этапе в процессе получения карты побыту</li>
+                    <li data-i18n="pricing_card_2_4">Представительство в воеводском управлении при необходимости</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" data-i18n="pricing_svyaz">Связаться с нами</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3 class="plan-name" data-i18n="pricing_card_3_title">Для работодателей</h3>
+                <div class="plan-price">
+                    <span class="price" data-i18n="pricing_card_3_price">Индивидуально</span>
+                    <span class="period" data-i18n="pricing_card_3_period">договорная</span>
+                </div>
+                <ul class="plan-features">
+                    <li data-i18n="pricing_card_3_1">Поиск и отбор работников</li>
+                    <li data-i18n="pricing_card_3_2">Проверка кандидатов</li>
+                    <li data-i18n="pricing_card_3_3">Организация выезда и легализация</li>
+                    <li data-i18n="pricing_card_3_4">Оформление всей документации</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" data-i18n="pricing_svyaz">Связаться с нами</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-------OTZIV-->
+   <section class="testimonials" id="otziv">
+    <div class="container">
+        <h2 class="section-title" data-i18n="testimonials_title">Отзывы и доверие</h2>
+
+        <div class="testimonials-slider">
+            <div class="testimonial-controls">
+                <button class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                <button class="next-btn"><i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="testimonials-container">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-image">
+                        <img src="images/photo_1_2025-07-14_11-09-38.jpg" alt="Client Testimonial" id="imgtest">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testimonial_1_text">"Я переехал из Венгрии в Польшу с венгерским ВНЖ, и всё касательно легализации было непонятно. К счастью, я нашёл Sadykov Group — они профессионально оформили все документы и полностью сопроводили процесс. Теперь всё ясно, и мой процесс официально запущен. Очень благодарен за помощь!"</p>
+                        <p class="client-name">Нурбек</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-image">
+                        <img src="images/photo_2_2025-07-14_11-09-38.jpg" alt="Client Testimonial" id="imgtest">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testimonial_2_text">"Я подал на ВНЖ в Польше через Sadykov Group — очень быстро получил печать в паспорт и теперь уверен, что скоро получу решение и саму карту. Спасибо команде за оперативность и профессионализм!"</p>
+                        <p class="client-name">Олохберди</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Community Section -->
+    <section class="community">
+        <div class="container">
+            <div class="community-content">
+                <h2 data-i18n="community_cta">Подайте заявку, чтобы получить бесплатную консультацию от наших специалистов</h2>
+                <a href="#contact" class="btn btn-primary" data-i18n="pricing_svyaz">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+   <section class="blog" id="blog">
+    <div class="container">
+        <h2 class="section-title" data-i18n="blog_title">Блог / Инфораздел - Советы по легализации</h2>
+
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/legal.jpg" alt="Blog Post">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category" data-i18n="blog_cat_1">Легализация</span>
+                    <h3 data-i18n="blog_1_title">Как получить разрешение на работу в Польше</h3>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> May 15, 2025</span>
+                    </div>
+                    <a href="https://t.me/Uzbeki_Tadjyki_Kazahi_Kyrgyzy" class="blog-link" data-i18n="data-last">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/urist.jpg" alt="Blog Post">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category" data-i18n="blog_cat_2">Трудоустройства</span>
+                    <h3 data-i18n="blog_2_title">Топ вакансий в Польше для иностранцев</h3>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> May 10, 2025</span>
+                    </div>
+                    <a href="https://t.me/Uzbeki_Tadjyki_Kazahi_Kyrgyzy" class="blog-link" data-i18n="data-last">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/legal.jpg" alt="Blog Post">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category" data-i18n="blog_cat_3">Легализация</span>
+                    <h3 data-i18n="blog_3_title">Что нужно знать перед выездом на работу</h3>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> May 5, 2025</span>
+                    </div>
+                    <a href="https://t.me/Uzbeki_Tadjyki_Kazahi_Kyrgyzy" class="blog-link" data-i18n="data-last">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+    <div class="container">
+        <h2 class="section-title" data-i18n="faq_title">Часто задаваемые вопросы</h2>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-i18n="faq_1_q">Сколько времени занимает трудоустройство через ваше агентство?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq_1_a">Обычно от 1 до 2 дней, в зависимости от вакансии, наличия документов и требований работодателя.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-i18n="faq_2_q">Вы помогаете с легализацией пребывания в Польше?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq_2_a">Да, мы полностью сопровождаем процесс легализации — от подачи документов до получения карты побыту.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-i18n="faq_3_q">Какие документы мне нужны для начала?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq_3_a">Паспорт, и информация о вашем опыте и желаемой работе.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-i18n="faq_4_q">Я не говорю по-польски — это проблема?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq_4_a">Нет, у нас есть вакансии без требования знания языка. Желательно русский.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-i18n="faq_5_q">Вы берёте оплату за трудоустройство?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq_5_a">Трудоустройства бесплатное на всех этапах</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-cta">
+            <a href="#contact" class="btn btn-primary" data-i18n="pricing_svyaz">Связаться с нами</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container" id="pcont">
+            <h2 class="section-title" data-i18n="partners_title"></h2>
+            <p class="p-title" style="font: uppercase, bold;" data-i18n="partners_desc">это надёжные работодатели из Европы, с которыми мы сотрудничаем напрямую в сфере подбора персонала. Мы отбираем только проверенные компании, которые предлагают легальное трудоустройство, стабильную оплату и достойные условия труда для наших кандидатов из Центральной Азии.</p>
+        </div>
+    </section>
+
+    <!-- Enhanced Contact Form with Submission -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title" data-i18n="contact_title">Чем мы можем вам помочь?</h2>
+    <div class="contact-form-container">
+      <form class="contact-form" id="contactform">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" data-i18n="contact_label_name">Имя*</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" data-i18n-placeholder="contact_placeholder_name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="contact_label_email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" data-i18n-placeholder="contact_placeholder_email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone" data-i18n="contact_label_phone">Телефон*</label>
+            <input type="tel" id="phone" name="phone" placeholder="+48XXXXXXXXX" data-i18n-placeholder="contact_placeholder_phone" required>
+          </div>
+          <div class="form-group">
+            <label for="subject" data-i18n="contact_label_subject">Интересующая услуга</label>
+            <select id="subject" name="subject" required>
+              <option value="" data-i18n="contact_option_placeholder">Выберите услугу</option>
+              <option value="membership" data-i18n="contact_option_1">Трудоустройство</option>
+              <option value="personal-training" data-i18n="contact_option_2">Легализация</option>
+              <option value="classes" data-i18n="contact_option_3">Юридические консультации</option>
+              <option value="nutrition" data-i18n="contact_option_4">Помощь с жильем</option>
+              <option value="other" data-i18n="contact_option_5">Другое</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message" data-i18n="contact_label_message">Сообщение</label>
+          <textarea id="message" name="message" rows="5" placeholder="Опишите ваш запрос" data-i18n-placeholder="contact_placeholder_message"></textarea>
+        </div>
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="privacy" name="privacy" required>
+        <label for="privacy">
+            <a href="privacy-policy.html" data-i18n="contact_label_privacy" style="color: #1E2B20; text-decoration: underline;"></a>
+        </label>
+
+        </div>
+        <button type="submit" class="btn btn-primary" data-i18n="contact_button_submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/logo-safed.png"  ></a>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 data-i18n="footer_quick_links">Быстрые ссылки</h3>
+                        <ul>
+                            <li><a href="#" data-i18n="">Главная</a></li>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#pricing">Услуги</a></li>
+                            <li><a href="#otziv">Отзывы</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                
+
+                    
+                    
+                    <div class="footer-column">
+                        <h3 data-i18n="footer_contacts">Контакты</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +48 668 876 800</li>
+                            <li><i class="fas fa-phone"></i> +48 668 876 900</li>
+                            <li><i class="fas fa-phone"></i> +48 668 876 200</li>
+                            <li><i class="fas fa-map-marker-alt"></i>Cyprysowa 22, Warszawa 02-265</li>
+                            <li><i class="fas fa-envelope"></i> office@sadykov-group.pl</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="footer-column">
+                        <h3 data-i18n="footer_follow">Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61571769044315"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/sadykovgroup_pl/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/sadykov-group-sp-z-o-o/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://t.me/Uzbeki_Tadjyki_Kazahi_Kyrgyzy"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2025 Sadykov Group. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+ 
+
+    <script>
+    document.getElementById('contactform').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const form = document.getElementById('contactform');
+        const formData = new FormData(form);
+
+        fetch('https://script.google.com/macros/s/AKfycby34PW1ppCK7KJ9Khm4DTC2zlRPHyz_tlcGIgf3LUPYrJk6mQuA5kcD64ihuO_nTiT2Hg/exec', {
+            method: 'POST',
+            body: formData
+        })
+        .then(() => {
+            alert('Спасибо! Ваша заявка отправлена.');
+            form.reset();
+        })
+        .catch(error => {
+            console.error('Ошибка:', error);
+            alert('Ошибка отправки. Попробуйте еще раз.');
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
