@@ -207,10 +207,19 @@ document.addEventListener('DOMContentLoaded', function() {
   fetch(`lang/${lang}.json`)  
     .then(res => res.json())
     .then(data => {
+        console.log("Loaded language:", lang);
+console.log(data);
+
       document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
         if (data[key]) {
           el.textContent = data[key];
+        }
+      });
+       document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        if (data[key]) {
+          el.placeholder = data[key];
         }
       });
       localStorage.setItem('lang', lang);
