@@ -1,0 +1,373 @@
+/* VacanciesSection */
+
+
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ===== VACANCY SECTION ===== */
+
+.vacancy-section {
+  padding: 24px;
+  color: #111827;
+}
+
+.vacancy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.vacancy-header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.header-actions button {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: #111827;
+  color: #ffffff;
+}
+
+/* ===== PROJECT ROWS ===== */
+
+.project-row {
+  margin-bottom: 24px;
+}
+
+.project-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===== SLIDER ===== */
+
+.vacancy-slider {
+  display: flex;
+  align-items: center;
+}
+
+.vacancy-track {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 8px 0;
+}
+
+.vacancy-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.vacancy-track::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+}
+
+.slider-btn {
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== CARDS ===== */
+
+.vacancy-card {
+  min-width: 260px;
+  max-width: 260px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.vacancy-card-image {
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 8px;
+  background: #ddd;
+}
+
+.vacancy-card-image--placeholder {
+  display: block;
+}
+
+.vacancy-tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  margin-bottom: 4px;
+}
+
+.vacancy-tag--available {
+  background: #e3fcef;
+  color: #0b6640;
+}
+
+.vacancy-tag--not_available {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.vacancy-card-title {
+  font-weight: 600;
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.vacancy-card-location {
+  font-size: 13px;
+  opacity: 0.8;
+  margin: 0 0 6px;
+}
+
+.vacancy-card-salary {
+  font-weight: 600;
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+/* delete button */
+
+.delete-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* ===== MODALS (DETAIL + ADD) ===== */
+
+.vacancy-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 999;
+}
+
+.vacancy-modal.show {
+  display: block;
+}
+
+.vacancy-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.vacancy-modal-content {
+  position: relative;
+  max-width: 700px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px 22px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* detail modal elements */
+
+.modal-image {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.modal-label {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  background: #e3fcef;
+  margin-bottom: 6px;
+}
+
+#vacancyModal h3 {
+  margin: 4px 0 4px;
+  font-size: 18px;
+}
+
+.modal-location {
+  font-size: 13px;
+  opacity: 0.8;
+  margin: 0 0 4px;
+}
+
+.modal-salary {
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.modal-body {
+  font-size: 14px;
+}
+
+.modal-body div {
+  margin-bottom: 4px;
+}
+
+/* ===== ADD VACANCY FORM ===== */
+
+#addVacancyModal h3,
+#addProjectModal h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+#addVacancyForm,
+#addProjectForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+#addVacancyForm label,
+#addProjectForm label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 4px;
+}
+
+#addVacancyForm input,
+#addVacancyForm textarea,
+#addVacancyForm select,
+#addProjectForm input {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+#addVacancyForm textarea {
+  resize: vertical;
+}
+
+#addVacancyForm button[type="submit"],
+#addProjectForm button[type="submit"] {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: #111827;
+  color: #ffffff;
+}
+
+/* rate type radio group */
+
+.rate-type-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin: 4px 0 2px;
+}
+
+.rate-type-group span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.rate-type-group label {
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+/* project choice in add vacancy */
+
+.project-choice-group {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+.project-choice-group p {
+  margin: 0 0 6px;
+  font-size: 13px;
+}
+
+#projectChoiceRadios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#projectChoiceRadios label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* responsive */
+
+@media (max-width: 600px) {
+  .vacancy-section {
+    padding: 16px;
+  }
+
+  .vacancy-modal-content {
+    margin: 20px 10px;
+    max-height: calc(100vh - 40px);
+  }
+
+  .vacancy-card {
+    min-width: 220px;
+    max-width: 220px;
+  }
+}

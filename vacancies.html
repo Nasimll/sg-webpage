@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vacancies</title>
+  <link rel="stylesheet" href="css/vacancies.css" />
+</head>
+<body>
+
+  <!-- VACANCIES SECTION -->
+  <section class="vacancy-section">
+    <div class="vacancy-header">
+      <h2>Vacancies</h2>
+      <div class="header-actions">
+        <button id="addProjectBtn">+ Add project row</button>
+        <button id="addVacancyBtn">+ Add vacancy</button>
+      </div>
+    </div>
+
+    <!-- All project rows will be rendered here -->
+    <div id="projectsContainer"></div>
+  </section>
+
+  <!-- DETAILS MODAL -->
+  <div class="vacancy-modal" id="vacancyModal">
+    <div class="vacancy-modal-backdrop" id="modalBackdrop"></div>
+    <div class="vacancy-modal-content">
+      <button class="modal-close" id="modalClose">✕</button>
+
+      <img id="modalImage" class="modal-image" style="display:none;" />
+
+      <div class="modal-label" id="modalLabel"></div>
+      <h3 id="modalTitle"></h3>
+      <p class="modal-location" id="modalLocation"></p>
+      <p class="modal-salary" id="modalSalary"></p>
+
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ADD VACANCY MODAL -->
+  <div class="vacancy-modal" id="addVacancyModal">
+    <div class="vacancy-modal-backdrop" id="addModalBackdrop"></div>
+    <div class="vacancy-modal-content">
+      <button class="modal-close" id="addModalClose">✕</button>
+      <h3>Add vacancy</h3>
+
+      <form id="addVacancyForm">
+        <label>
+          Picture
+          <input type="file" id="fieldImage" accept="image/*" />
+        </label>
+
+        <label>
+          Title
+          <input type="text" id="fieldTitle" required />
+        </label>
+
+        <label>
+          Location
+          <input type="text" id="fieldLocation" required />
+        </label>
+
+        <label>
+          Status
+          <select id="fieldStatus">
+            <option value="available">AVAILABLE</option>
+            <option value="not_available">NOT AVAILABLE</option>
+          </select>
+        </label>
+
+        <label>
+          People needed
+          <input type="number" id="fieldPeople" min="1" step="1" />
+        </label>
+
+        <label>
+          Hour rate (0–100)
+          <input type="number" id="fieldRate" min="0" max="100" step="1" required />
+        </label>
+
+        <div class="rate-type-group">
+          <span>Type:</span>
+          <label><input type="radio" name="rateType" value="netto" checked /> Netto</label>
+          <label><input type="radio" name="rateType" value="brutto" /> Brutto</label>
+        </div>
+
+        <!-- PROJECT CHOICE -->
+        <div class="project-choice-group">
+          <p>Which project do you want to add this card to?</p>
+          <div id="projectChoiceRadios"></div>
+        </div>
+
+        <label>
+          Description (full text, bullet lines)
+          <textarea id="fieldDescription" rows="6"></textarea>
+        </label>
+
+        <button type="submit">Save vacancy</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ADD PROJECT ROW MODAL -->
+  <div class="vacancy-modal" id="addProjectModal">
+    <div class="vacancy-modal-backdrop" id="addProjectBackdrop"></div>
+    <div class="vacancy-modal-content">
+      <button class="modal-close" id="addProjectClose">✕</button>
+      <h3>Add project row</h3>
+
+      <form id="addProjectForm">
+        <label>
+          Project code (one uppercase letter, e.g. A, B, C)
+          <input type="text" id="fieldProjectChar" maxlength="1" required />
+        </label>
+        <button type="submit">Create project row</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/vscript.js"></script>
+</body>
+</html>
