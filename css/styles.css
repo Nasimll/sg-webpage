@@ -28,6 +28,14 @@ body {
     background-color: var(--bg-light);
     overflow-x: hidden;
 }
+main{
+    top: 0px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    overflow-x: hidden;
+}
 
 a {
     text-decoration: none;

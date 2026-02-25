@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sadykov Group sp z.o.o</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.minify.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
@@ -14,7 +14,8 @@
 
 </head>
 <body>
-    <!-- Combined Header and Hero Section -->
+    <main>
+        <!-- Combined Header and Hero Section -->
 <section class="hero-section">
     <!-- Header -->
 <!-- Header -->
@@ -23,7 +24,7 @@
             <div class="header-content">
                 <div class="logo">  
                     
-                    <a href="index.html"><img src="images/logo-safed.png"  ></a>
+                    <a href="index.html"><img src="images/logo-safed.png"  alt="Logo of Sadykov Group sp. z.o.o"></a>
                 </div>
                 <nav class="nav-menu">
                     <ul>
@@ -38,13 +39,13 @@
                 <div class="lang-switcher" onclick="toggleLangDropdown(event)">
                 <div class="lang-select" data-i18n="language"></div>
                 <div class="lang-dropdown" id="langMenu">
-                <button onclick="setLanguage('en')"><i class="fi fi-gb"></i> EN</button>
-                <button onclick="setLanguage('ru')" ><i class="fi fi-ru"></i> RU</button>
-                <button onclick="setLanguage('pl')"><i class="fi fi-pl"></i> PL</button>
+                <button class="btntr_1" onclick="setLanguage('en')"><i class="fi fi-gb" ></i> EN</button>
+                <button class="btntr_2" onclick="setLanguage('ru')" ><i class="fi fi-ru"></i> RU</button>
+                <button class="btntr_3" onclick="setLanguage('pl')"><i class="fi fi-pl"></i> PL</button>
                  </div>
                 </div>
                <div class="header-cta">
-                    <a id="btnnone" href="#contact" class="btn btn-outline" data-i18n="btn_contact">Контакты</a>
+                    <a id="btnnone" href="#contact" aria-label="Open Contact Section" class="btn btn-outline" data-i18n="btn_contact">Контакты</a>
                 </div>
                 <div class="mobile-menu-toggle">
                     <span></span>
@@ -62,12 +63,10 @@
                 <h1 data-i18n="hero_title">Профессиональное трудоустройство <br><span class="highlight">в Польше</span></h1>
                 <p data-i18n="hero_desc">Мы помогаем найти легальную и стабильную работу, сопровождаем вас на каждом этапе — от подачи документов до выхода на работу.</p>
                 <div class="twobtn">
-                    <a href="#contact" class="btn btn-primary" id="btn" data-i18n="btn_find_job">Найти работу</a>
-                    <a href="#contact" class="btn btn-primary" id="btn2" data-i18n="btn_find_employees">Найти сотрудников</a>
+                    <a href="#contact" aria-label="Open Form Section" class="btn btn-primary" id="btn" data-i18n="btn_find_job">Найти работу</a>
+                    <a href="#contact" aria-label="Opem Form Section " class="btn btn-primary" id="btn2" data-i18n="btn_find_employees">Найти сотрудников</a>
                 </div>
             </div>
-           
-           
     </div>
 </section>
 
@@ -80,19 +79,19 @@
     
     <div class="commitment-cards">
       <div class="commitment-card">
-        <img src="images/udt.jpg" alt="Personal Training" />
+        <img src="images/udt.webp" alt="udt picture of the work process(Employment)" />
         <div class="card-overlay">
           <span class="card-tag" data-i18n="card_1">Ищете работу в Польше?</span>
         </div>
       </div>
       <div class="commitment-card">
-        <img src="images/legal.jpg" alt="Group Classes" />
+        <img src="images/legal.webp" alt="Legalization Service" />
         <div class="card-overlay">
           <span class="card-tag" data-i18n="card_2">Вам нужна помощь в легализации в Польше?</span>
         </div>
       </div>
       <div class="commitment-card">
-        <img src="images/sklad.jpg" alt="Nutrition Guidance" />
+        <img src="images/sklad.webp" alt="picture of the work process(Employment)" />
         <div class="card-overlay">
           <span class="card-tag" data-i18n="card_3">Вы ищете сотрудников?</span>
         </div>
@@ -271,7 +270,7 @@
                     <li data-i18n="pricing_card_1_3">Помощь с оформлением</li>
                     <li data-i18n="pricing_card_1_4">Онлайн-поддержка</li>
                 </ul>
-                <a href="#contact" class="btn btn-primary" data-i18n="pricing_svyaz">Связаться с нами</a>
+                <a href="#contact" class="btn btn-primary" aria-label="Open Contact Section" data-i18n="pricing_svyaz">Связаться с нами</a>
             </div>
 
             <div class="pricing-card featured">
@@ -301,7 +300,7 @@
                     <li data-i18n="pricing_card_3_3">Организация выезда и легализация</li>
                     <li data-i18n="pricing_card_3_4">Оформление всей документации</li>
                 </ul>
-                <a href="#contact" class="btn btn-primary" data-i18n="pricing_svyaz">Связаться с нами</a>
+                <a href="#contact" aria-label="Open Contact Section" class="btn btn-primary" data-i18n="pricing_svyaz">Связаться с нами</a>
             </div>
         </div>
     </div>
@@ -321,7 +320,7 @@
             <div class="testimonials-container">
                 <div class="testimonial-slide active">
                     <div class="testimonial-image">
-                        <img src="images/photo_1_2025-07-14_11-09-38.jpg" alt="Client Testimonial" id="imgtest">
+                        <img src="images/photo_1_2025-07-14_11-09-38.webp" alt="Client Testimonial" id="imgtest">
                     </div>
                     <div class="testimonial-content">
                         <div class="rating">
@@ -338,7 +337,7 @@
 
                 <div class="testimonial-slide">
                     <div class="testimonial-image">
-                        <img src="images/photo_2_2025-07-14_11-09-38.jpg" alt="Client Testimonial" id="imgtest">
+                        <img src="images/photo_2_2025-07-14_11-09-38.webp" alt="Client Testimonial" id="imgtest">
                     </div>
                     <div class="testimonial-content">
                         <div class="rating">
@@ -352,6 +351,23 @@
                         <p class="client-name" data-i18n="client-name" >Олохберди</p>
                     </div>
                 </div>
+
+                 <div class="testimonial-slide">
+                    <div class="testimonial-image">
+                        <img src="images/photo_2026-02-19_12-58-13.webp" alt="Client Testimonial" id="imgtest">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testimonial_3_text">"Здравствуйте, меня зовут Таврат Бекховджан. Я приехал 7 месяцев назад из Словакии. Я подал через Sadykov group на легализацию и нашли работу. В телеграм-группе я их нашёл . Вот я сегодня подавал отпечаток, и выдали красную печать. Большое им спасибо !"</p>
+                        <p class="client-name" data-i18n="client-name-3" >Таврат</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -362,7 +378,7 @@
         <div class="container">
             <div class="community-content">
                 <h2 data-i18n="community_cta">Подайте заявку, чтобы получить бесплатную консультацию от наших специалистов</h2>
-                <a href="#contact" class="btn btn-primary" data-i18n="pricing_svyaz">Связаться с нами</a>
+                <a href="#contact" class="btn btn-primary" aria-label="Open Contact Section" data-i18n="pricing_svyaz">Связаться с нами</a>
             </div>
         </div>
     </section>
@@ -375,7 +391,7 @@
         <div class="blog-grid">
             <div class="blog-card">
                 <div class="blog-image">
-                    <img src="images/legal.jpg" alt="Blog Post">
+                    <img src="images/legal.webp" alt="Blog Post">
                 </div>
                 <div class="blog-content">
                     <span class="blog-category" data-i18n="blog_cat_1">Легализация</span>
@@ -389,7 +405,7 @@
 
             <div class="blog-card">
                 <div class="blog-image">
-                    <img src="images/urist.jpg" alt="Blog Post">
+                    <img src="images/urist.webp" alt="Blog Post">
                 </div>
                 <div class="blog-content">
                     <span class="blog-category" data-i18n="blog_cat_2">Трудоустройства</span>
@@ -403,7 +419,7 @@
 
             <div class="blog-card">
                 <div class="blog-image">
-                    <img src="images/legal.jpg" alt="Blog Post">
+                    <img src="images/legal.webp" alt="Blog Post">
                 </div>
                 <div class="blog-content">
                     <span class="blog-category" data-i18n="blog_cat_3">Легализация</span>
@@ -546,24 +562,20 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="index.html"><img src="images/logo-safed.png"  ></a>
+                    <a href="index.html"><img src="images/logo-safed.png"  alt="Logo of Sadykov Group sp. z.o.o"></a>
                 </div>
                 
                 <div class="footer-links">
                     <div class="footer-column">
                         <h3 data-i18n="footer_quick_links">Быстрые ссылки</h3>
                         <ul>
-                            <li><a href="#" data-i18n="nav_home">Главная</a></li>
-                            <li><a href="#about" data-i18n="nav_about">О нас</a></li>
-                            <li><a href="#pricing" data-i18n="nav_services">Услуги</a></li>
-                            <li><a href="#otziv" data-i18n="nav_reviews">Отзывы</a></li>
-                            <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                            <li><a href="#" aria-label="Open Home" data-i18n="nav_home">Главная</a></li>
+                            <li><a href="#about" aria-label="Open About Section " data-i18n="nav_about">О нас</a></li>
+                            <li><a href="#pricing" aria-label="Open Services Section" data-i18n="nav_services">Услуги</a></li>
+                            <li><a href="#otziv" aria-label="Open Review Section" data-i18n="nav_reviews">Отзывы</a></li>
+                            <li><a href="#faq" aria-label="Open FAQ Section" data-i18n="nav_faq">FAQ</a></li>
                         </ul>
                     </div>
-                
-
-                    
-                    
                     <div class="footer-column">
                         <h3  data-i18n="btn_contact">Контакты</h3>
                         <ul>
@@ -593,10 +605,10 @@
             </div>
         </div>
     </footer>
+    </main>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js" defer></script>
  
-
     <script>
     document.getElementById('contactform').addEventListener('submit', function(e) {
         e.preventDefault();
