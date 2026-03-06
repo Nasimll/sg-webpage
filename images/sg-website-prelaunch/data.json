@@ -1,0 +1,21 @@
+{
+  "projects": [
+    {
+      "char": "B"
+    }
+  ],
+  "vacancies": [
+    {
+      "id": "v_1764252301108",
+      "projectChar": "B",
+      "title": "Warehouse worker",
+      "location": "warsaw",
+      "status": "available",
+      "peopleNeeded": 3,
+      "rate": 34,
+      "rateType": "brutto",
+      "description": "edodoed",
+      "imageUrl": ""
+    }
+  ]
+}

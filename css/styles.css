@@ -131,7 +131,7 @@ ul {
     margin: 0 auto 3rem;
 }
 
-.highlight {
+#highlight {
     color: var(--secondary-color);
 }
 
@@ -188,6 +188,39 @@ ul {
     padding: 20px 0;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+.typewriter {
+    display: inline-block;       /* Needed to animate width */
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3rem;
+
+    animation: typing 2s steps(30, end) forwards, blink 0.7s infinite;
+}
+
+/* Add a delay for the second line */
+.second-line{
+    width: 0;  
+    animation-delay: 1.2s; /* Wait until first line finishes */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+@media (max-width: 576px) {
+    .typewriter {
+        width: auto !important;       /* cancel width animation */
+        white-space: normal !important; /* allow wrapping */
+        overflow: visible !important; /* show full text */
+        border-right: none !important; /* remove cursor if you want */
+        animation: none !important;    /* cancel typing animation */
+        font-size: 2rem;               /* optional smaller font */
+    }
+}
 
 .header.transparent {
     background-color: transparent;
@@ -196,7 +229,7 @@ ul {
 
 .header.scrolled {
     background-color: var(--primary-color); /* or your desired color */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional shadow */
+    box-shadow: 0 40px 60px -20px rgba(0,0,0,0.4);
 }
 
 .header-content {
@@ -220,6 +253,7 @@ ul {
 .nav-menu{
     display: flex;
     gap: 30px;
+    
 }
 
 .nav-menu ul {
@@ -275,7 +309,6 @@ ul {
 
 /* Hero Section */
 .hero-section {
-    background-image: url(../images/mainoneimg.jpg);
     background-size: cover;
     background-position: center;
     color: var(--text-light);
@@ -288,13 +321,27 @@ ul {
     justify-content: space-around;
     align-items: center;
     gap: 160px;
-    height: 700px;
+    height: 100vh;
+
 }
+.hero-video {
+    position: absolute;
+    top: 50%;          
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;       
+    height: 100%;      
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0; 
+}
+
 
 .hero-section::before {
     content: '';
     position: absolute;
-    z-index: 0;
+    z-index: 3;
     top: 0;
     left: 0;
     width: 100%;
@@ -312,8 +359,9 @@ ul {
 
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -337,7 +385,7 @@ ul {
 }
 
 .hero-text {
-    flex: 1 1 400px;
+    flex: 1 1 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -345,30 +393,20 @@ ul {
     gap: 30px;
 }
 
-.hero-text h1 {
+.hero-text h1 span {
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
-.hero-text p {
+.hero-content p {
     font-size: 1.1rem;
-    max-width: 500px;
+    max-width: 800px;
+    
 }
 
-.hero-image {
-    flex: 1 1 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
-}
+
 
 .twobtn{
     display: flex;
@@ -1356,7 +1394,7 @@ ul {
         display: inline;
     }
     
-    .hero-text h1 {
+    .hero-text h1 span {
         font-size: 2.8rem;
     }
     
@@ -1439,8 +1477,7 @@ ul {
         flex-direction: column;
     }
     
-    .hero-text,
-    .hero-image {
+    .hero-text{
         flex: none;
         width: 100%;
         align-items: center;
@@ -1505,8 +1542,8 @@ ul {
         display: inline;
     }
     
-    .hero-text h1 {
-        font-size: 2.2rem;
+    .hero-text h1 span {
+        font-size: 2.7rem;
     }
     
     .classes-grid {

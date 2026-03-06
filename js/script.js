@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Add animation on scroll
-    const animateElements = document.querySelectorAll('.service-item, .pricing-card, .blog-card, .commitment-card, .segment-card, .stat-item, .partner-logo');
+    const animateElements = document.querySelectorAll('section');
     
     function checkScroll() {
         animateElements.forEach(el => {
@@ -242,3 +242,5 @@ document.addEventListener("DOMContentLoaded", () => {
     const dropdown = document.getElementById("langMenu");
     if (dropdown) dropdown.style.display = "none";
   });
+
+

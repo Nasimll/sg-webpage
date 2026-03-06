@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sadykov Group sp z.o.o</title>
-    <link rel="stylesheet" href="css/styles.minify.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
@@ -17,7 +17,11 @@
     <main>
         <!-- Combined Header and Hero Section -->
 <section class="hero-section">
-    <!-- Header -->
+        <video autoplay muted loop playsinline class="hero-video">
+        <source src="images/videoor.mp4" type="video/mp4">
+        </video>
+
+    
 <!-- Header -->
     <header class="header">
         <div class="container">
@@ -59,9 +63,13 @@
     <!-- Hero Content -->
     <div class="container" id="cont1">
         <div class="hero-content">
-            <div class="hero-text">
-                <h1 data-i18n="hero_title">Профессиональное трудоустройство <br><span class="highlight">в Польше</span></h1>
-                <p data-i18n="hero_desc">Мы помогаем найти легальную и стабильную работу, сопровождаем вас на каждом этапе — от подачи документов до выхода на работу.</p>
+                <div class="hero-text">
+                <h1 id="typewriter">
+                <span class="typewriter"  data-i18n="hero_title"></span><br>
+                <span class="typewriter second-line" id="highlight" data-i18n="hero_title_g"></span>
+                </h1>
+                </div>
+                <p data-i18n="hero_desc">Мы помогаем найти легальную и  <br>стабильную работу, сопровождаем вас на каждом этапе — от подачи документов до выхода на работу.</p>
                 <div class="twobtn">
                     <a href="#contact" aria-label="Open Form Section" class="btn btn-primary" id="btn" data-i18n="btn_find_job">Найти работу</a>
                     <a href="#contact" aria-label="Opem Form Section " class="btn btn-primary" id="btn2" data-i18n="btn_find_employees">Найти сотрудников</a>
@@ -69,9 +77,6 @@
             </div>
     </div>
 </section>
-
-    
-
   <section class="commitment" id="about">
   <div class="container">
     <h2 class="section-title" data-i18n="about_title">Полный спектр услуг по трудоустройству и легализации для иностранцев</h2>
@@ -629,6 +634,7 @@
             alert('Ошибка отправки. Попробуйте еще раз.');
         });
     });
+    
 </script>
 
 
