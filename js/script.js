@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    //Reviews SLider Section
+
     
     // Set initial state for animation
     animateElements.forEach(el => {
@@ -322,18 +322,6 @@ document.addEventListener("DOMContentLoaded", () => {
 //     }
 // });
 
-// ===== HEADER SCROLL =====
-window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
-
-    if (window.scrollY > 50) {
-        header.classList.remove("transparent");
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-        header.classList.add("transparent");
-    }
-});
 
 
 document.addEventListener("DOMContentLoaded", function () {
