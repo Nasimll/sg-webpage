@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sadykov Group sp z.o.o</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
     <meta name="description" content="Agencja Zatrudnienia w Polsce" />
    <link rel="icon" type="image/png" href="/images/Group 2436.png">
 
+
 </head>
 <body>
     <main>
         <!-- Combined Header and Hero Section -->
 <section class="hero-section">
-        <video autoplay muted loop playsinline class="hero-video">
+        <video autoplay muted loop playsinline class="hero-video" poster="images/mainoneimg.jpg" preload="none">
         <source src="images/videoor.mp4" type="video/mp4">
         </video>
 
@@ -69,10 +71,10 @@
                 <span class="typewriter second-line" id="highlight" data-i18n="hero_title_g"></span>
                 </h1>
                 </div>
-                <p data-i18n="hero_desc">Мы помогаем найти легальную и  <br>стабильную работу, сопровождаем вас на каждом этапе — от подачи документов до выхода на работу.</p>
+                <p data-i18n="hero_desc" data-aos="zoom-out">Мы помогаем найти легальную и стабильную работу, сопровождаем вас на каждом этапе — от подачи документов до выхода на работу.</p>
                 <div class="twobtn">
-                    <a href="#contact" aria-label="Open Form Section" class="btn btn-primary" id="btn" data-i18n="btn_find_job">Найти работу</a>
-                    <a href="#contact" aria-label="Opem Form Section " class="btn btn-primary" id="btn2" data-i18n="btn_find_employees">Найти сотрудников</a>
+                    <a href="#contact" aria-label="Open Form Section" data-aos="fade-right" class="btn btn-primary" id="btn" data-i18n="btn_find_job">Найти работу</a>
+                    <a href="#contact" aria-label="Opem Form Section " data-aos="fade-left" class="btn btn-primary" id="btn2" data-i18n="btn_find_employees">Найти сотрудников</a>
                 </div>
             </div>
     </div>
@@ -82,20 +84,20 @@
     <h2 class="section-title" data-i18n="about_title">Полный спектр услуг по трудоустройству и легализации для иностранцев</h2>
     <p class="section-description" data-i18n="about_desc">Наша миссия — помочь людям, легально работать в Европе. Мы работаем с 2018 года и заслужили доверие тысяч работников и сотен работодателей.</p>
     
-    <div class="commitment-cards">
-      <div class="commitment-card">
+    <div class="commitment-cards" >
+      <div class="commitment-card" data-aos="fade-right">
         <img src="images/udt.webp" alt="udt picture of the work process(Employment)" />
         <div class="card-overlay">
           <span class="card-tag" data-i18n="card_1">Ищете работу в Польше?</span>
         </div>
       </div>
-      <div class="commitment-card">
+      <div class="commitment-card" data-aos="fade-up">
         <img src="images/legal.webp" alt="Legalization Service" />
         <div class="card-overlay">
           <span class="card-tag" data-i18n="card_2">Вам нужна помощь в легализации в Польше?</span>
         </div>
       </div>
-      <div class="commitment-card">
+      <div class="commitment-card" data-aos="fade-left">
         <img src="images/sklad.webp" alt="picture of the work process(Employment)" />
         <div class="card-overlay">
           <span class="card-tag" data-i18n="card_3">Вы ищете сотрудников?</span>
@@ -106,8 +108,8 @@
 </section>
 
 
-    <section class="timeline">
-  <div class="container">
+<div class="timeline">
+  <section class="container">
     <h2 class="section-title" data-i18n="timeline_title">Наш путь к совершенству</h2>
     <div class="timeline-container">
       <!-- Indicator -->
@@ -139,18 +141,18 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
 
     <!-- Services Section -->
-    <section class="services">
-        <div class="container" id="eee">
+    <div class="services">
+        <section class="container" id="eee">
             <h2 class="section-title" data-i18n="services_title"> Услуги агентства<span class="highlight"> SADYKOV GROUP </span></h2>
             
             <div class="services-grid">
                 <div class="service-column">
-                    <div class="service-item">
+                    <div class="service-item" data-aos="fade-up">
                         <div class="service-icon">
                             <i class="fas fa-industry"></i>
                         </div>
@@ -158,7 +160,7 @@
                         <p data-i18n="services_1_desc">Трудоустройство на ведущие заводы и производства Польши с официальным оформлением и достойной оплатой труда.</p>
                     </div>
                     
-                    <div class="service-item">
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1000">
                         <div class="service-icon">
                             <i class="fas fa-boxes"></i>
                         </div>
@@ -168,7 +170,7 @@
                 </div>
                 
                 <div class="service-column">
-                    <div class="service-item">
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1200">
                         <div class="service-icon">
                             <i class="fas fa-file-signature"></i>
                         </div>
@@ -176,7 +178,7 @@
                         <p data-i18n="services_3_desc">Полное сопровождение процесса легализации в Варшаве: оформление карты побыту, рабочей визы и других документов</p>
                     </div>
                     
-                    <div class="service-item">
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1400">
                         <div class="service-icon">
                             <i class="fas fa-list"></i>
                         </div>
@@ -186,7 +188,7 @@
                 </div>
                 
                 <div class="service-column">
-                    <div class="service-item">
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1600">
                         <div class="service-icon">
                             <i class="fas fa-users"></i>
                         </div>
@@ -194,7 +196,7 @@
                         <p data-i18n="services_5_desc">Берём на себя весь процесс подбора и оформления персонала.</p>
                     </div>
                     
-                    <div class="service-item">
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1800">
                         <div class="service-icon">
                             <i class="fas fa-clipboard-list"></i>
                         </div>
@@ -203,14 +205,14 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
      <!-- Statistics Section -->
     <section class="statistics">
         <div class="container">
-            <h2 class="section-title" data-i18n="statistics_title">Наши достижения</h2>
-            <div class="stats-container">
+            <h2 class="section-title"  data-aos="fade-up" data-i18n="statistics_title">Наши достижения</h2>
+            <div class="stats-container" data-aos="fade-up" data-aos-duration="1100">
                 <div class="stat-item">
                     <div class="stat-icon">
                         <i class="fas fa-users"></i>
@@ -245,16 +247,15 @@
 
 
     <!-- banner section -->
-    <section class="banner">
-        <div class="container">
-            <div class="banner-content">
-                <h2>SADYKOV GROUP</h2>
-                <h3 data-i18n="banner_subtitle">С нами все просто</h3>
-            </div>
-        </div>
-    </section>
+   <section class="banner">
+    <div class="banner-parallax"></div>
 
-   
+    <div class="banner-content">
+        <h2 data-aos="zoom-out" data-aos-duration="900">SADYKOV GROUP</h2>
+        <h3 data-aos="zoom-out" data-aos-duration="1200" data-i18n="banner_subtitle">Z nami to proste</h3>
+    </div>
+</section>
+
     <!-- pricing section -->
     <section class="pricing" id="pricing">
     <div class="container">
@@ -264,7 +265,7 @@
             <span>Yearly</span> -->
         </div>
         <div class="pricing-grid">
-            <div class="pricing-card">
+            <div class="pricing-card" data-aos="fade-right">
                 <h3 class="plan-name" data-i18n="pricing_card_1_title">Помощь в трудоустройстве</h3>
                 <div class="plan-price">
                     <span class="price" data-i18n="pricing_card_1_price">Бесплатно</span>
@@ -278,7 +279,7 @@
                 <a href="#contact" class="btn btn-primary" aria-label="Open Contact Section" data-i18n="pricing_svyaz">Связаться с нами</a>
             </div>
 
-            <div class="pricing-card featured">
+            <div class="pricing-card featured" data-aos="fade-up" >
                 <h3 class="plan-name" data-i18n="pricing_card_2_title">Полный пакет</h3>
                 <div class="plan-price">
                     <span class="price" data-i18n="pricing_card_2_price">oт 500</span>
@@ -293,7 +294,7 @@
                 <a href="#contact" class="btn btn-primary" data-i18n="pricing_svyaz">Связаться с нами</a>
             </div>
 
-            <div class="pricing-card">
+            <div class="pricing-card" data-aos="fade-left">
                 <h3 class="plan-name" data-i18n="pricing_card_3_title">Для работодателей</h3>
                 <div class="plan-price">
                     <span class="price" data-i18n="pricing_card_3_price">Индивидуально</span>
@@ -312,78 +313,206 @@
 </section>
 
 <!-------OTZIV-->
-   <section class="testimonials" id="otziv">
-    <div class="container">
-        <h2 class="section-title" data-i18n="testimonials_title">Отзывы и доверие</h2>
-
-        <div class="testimonials-slider">
-            <div class="testimonial-controls">
-                <button class="prev-btn"><i class="fas fa-arrow-left"></i></button>
-                <button class="next-btn"><i class="fas fa-arrow-right"></i></button>
-            </div>
-
-            <div class="testimonials-container">
-                <div class="testimonial-slide active">
-                    <div class="testimonial-image">
-                        <img src="images/photo_1_2025-07-14_11-09-38.webp" alt="Client Testimonial" id="imgtest">
-                    </div>
-                    <div class="testimonial-content">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text" data-i18n="testimonial_1_text">"Я переехал из Венгрии в Польшу с венгерским ВНЖ, и всё касательно легализации было непонятно. К счастью, я нашёл Sadykov Group — они профессионально оформили все документы и полностью сопроводили процесс. Теперь всё ясно, и мой процесс официально запущен. Очень благодарен за помощь!"</p>
-                        <p class="client-name" data-i18n="client-name-2">Nurbek</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-slide">
-                    <div class="testimonial-image">
-                        <img src="images/photo_2_2025-07-14_11-09-38.webp" alt="Client Testimonial" id="imgtest">
-                    </div>
-                    <div class="testimonial-content">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text" data-i18n="testimonial_2_text">"Я подал на ВНЖ в Польше через Sadykov Group — очень быстро получил печать в паспорт и теперь уверен, что скоро получу решение и саму карту. Спасибо команде за оперативность и профессионализм!"</p>
-                        <p class="client-name" data-i18n="client-name" >Олохберди</p>
-                    </div>
-                </div>
-
-                 <div class="testimonial-slide">
-                    <div class="testimonial-image">
-                        <img src="images/photo_2026-02-19_12-58-13.webp" alt="Client Testimonial" id="imgtest">
-                    </div>
-                    <div class="testimonial-content">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text" data-i18n="testimonial_3_text">"Здравствуйте, меня зовут Таврат Бекховджан. Я приехал 7 месяцев назад из Словакии. Я подал через Sadykov group на легализацию и нашли работу. В телеграм-группе я их нашёл . Вот я сегодня подавал отпечаток, и выдали красную печать. Большое им спасибо !"</p>
-                        <p class="client-name" data-i18n="client-name-3" >Таврат</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+   <section class="google-review-section">
+    <div class="google-rating-box" data-aos="zoom-out-up">
+  <div class="rating-left">
+    <img src="/images/google-search-icon-google-product-illustration-free-png.webp" class="google-logo" alt="Google">
+    <div>
+      <span class="rating-title">Google Rating</span>
+      <div class="rating-stars">
+        <strong>4.9</strong>
+        <span class="stars">★★★★★</span>
+      </div>
+      <a href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank" class="see-reviews">
+        See all our reviews
+      </a>
     </div>
+  </div>
+</div>
+
+  <div class="review-slider-box" data-aos="fade-up">
+    <button class="slider-btn prev" id="prevBtn">&#10094;</button>
+    <button class="slider-btn next" id="nextBtn">&#10095;</button>
+
+    <div class="review-slider-wrapper">
+      <div class="review-slider" id="reviewSlider">
+
+        <a class="review-card" href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank">
+          <div class="review-user">
+            <div class="avatar">G</div>
+            <div>
+              <h4>GameTrix</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Хорошая компания, помогли оформить документы и устроиться на работу. Всё объясняют грамотно и без лишних вопросов. 10/10, советую.</p>
+          <div class="review-footer">
+            <span class="google-badge">Google</span>
+            <span class="review-time">4 months ago</span>
+          </div>
+        </a>
+
+        <a class="review-card" href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank">
+          <div class="review-user">
+            <div class="avatar">A</div>
+            <div>
+              <h4>Avazjon Manonov</h4>
+              <div class="stars">★★★★☆</div>
+            </div>
+          </div>
+          <p class="review-text">Отличная компания Sadykov group sp.z o.o. меня быстро нашли работа и трудоустроили. Всем рекомендую.</p>
+          <div class="review-footer">
+            <span class="google-badge">Google</span>
+            <span class="review-time">2 months ago</span>
+          </div>
+        </a>
+
+        <a class="review-card" href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank">
+          <div class="review-user">
+            <div class="avatar">B</div>
+            <div>
+              <h4>Behruzbek Azamov</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Sadykov group самый лучший я сегодня получил отпечаток пальца спасибо огромное</p>
+          <div class="review-footer">
+            <span class="google-badge">Google</span>
+            <span class="review-time">a month ago</span>
+          </div>
+        </a>
+
+        <a class="review-card" href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank">
+          <div class="review-user">
+            <div class="avatar">С</div>
+            <div>
+              <h4>саттар алдабергенов</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Хорошая компания, быстро и качественно обслужили и устроили на работу 10/10</p>
+          <div class="review-footer">
+            <span class="google-badge">Google</span>
+            <span class="review-time">6 months ago</span>
+          </div>
+        </a>
+
+        <a class="review-card" href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank">
+          <div class="review-user">
+            <div class="avatar">D</div>
+            <div>
+              <h4>Donier Djumaev</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Добрый день, очень хорошо встретили, были на связи на всех этапах, молодцы ребята!!!</p>
+          <div class="review-footer">
+            <span class="google-badge">Google</span>
+            <span class="review-time">6 months ago</span>
+          </div>
+        </a>
+
+        <a class="review-card" href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank">
+          <div class="review-user">
+            <div class="avatar">E</div>
+            <div>
+              <h4>eldarskii</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Отличное место! Всем рекомендую, все делают четко, грамотно и в первую очередь быстро</p>
+          <div class="review-footer">
+            <span class="google-badge">Google</span>
+            <span class="review-time">6 months ago</span>
+          </div>
+        </a>
+
+        <a class="review-card" href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank">
+          <div class="review-user">
+            <div class="avatar">T</div>
+            <div>
+              <h4>Timur Sadikov</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Рекомендую. Специалисты по легализации очень даже компетентны. Грамотно и доходчиво все объясняют</p>
+          <div class="review-footer">
+            <span class="google-badge">Google</span>
+            <span class="review-time">7 months ago</span>
+          </div>
+        </a>
+
+        <a class="review-card" href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank">
+          <div class="review-user">
+            <div class="avatar">С</div>
+            <div>
+              <h4>Соня Старевич</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">спасибо отличная компания помогли с документами и работой</p>
+          <div class="review-footer">
+            <span class="google-badge">Google</span>
+            <span class="review-time">4 months ago</span>
+          </div>
+        </a>
+
+        <a class="review-card" href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank">
+          <div class="review-user">
+            <div class="avatar">A</div>
+            <div>
+              <h4>Азамат Шаимбаев</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Это Лучшая Компания Sydykov group Топ 1</p>
+          <div class="review-footer">
+            <span class="google-badge">Google</span>
+            <span class="review-time">2 months ago</span>
+          </div>
+        </a>
+
+        <a class="review-card" href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank">
+          <div class="review-user">
+            <div class="avatar">К</div>
+            <div>
+              <h4>Калдыкул Сарсенова</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Хорошо обслужили, устроили на работу 10/10</p>
+          <div class="review-footer">
+            <span class="google-badge">Google</span>
+            <span class="review-time">5 months ago</span>
+          </div>
+        </a>
+
+        <a class="review-card" href="https://www.google.com/search?sa=X&sca_esv=4f709db2114f009d&sxsrf=ANbL-n64zmrAfdQqSDzo3_aYw_jUIOVeLw:1775050166129&q=Sadykov+Group+sp.+z+o.o.+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyMTW3tDSytDQxtTQ1sDAzMDbewMj4ilEhODGlMju_TMG9KL-0QKG4QE-hSiFfL19PISi1LDO1vHgRK0ElAEF0lYZfAAAA&rldimm=457992994595086033&tbm=lcl&hl=en-PL&ved=2ahUKEwi09vCU4cyTAxUzHhAIHUtABY8Q9fQKegQIShAG&biw=1163&bih=944&dpr=1#lkt=LocalPoiReviews" target="_blank">
+          <div class="review-user">
+            <div class="avatar">M</div>
+            <div>
+              <h4>Mikahluda Iranov</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Очень хорошая компания, всем советую.</p>
+          <div class="review-footer">
+            <span class="google-badge">Google</span>
+            <span class="review-time">7 months ago</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
 </section>
 
     <!-- community sec -->
     <section class="community">
         <div class="container">
             <div class="community-content">
-                <h2 data-i18n="community_cta">Подайте заявку, чтобы получить бесплатную консультацию от наших специалистов</h2>
-                <a href="#contact" class="btn btn-primary" aria-label="Open Contact Section" data-i18n="pricing_svyaz">Связаться с нами</a>
+                <h2 data-i18n="community_cta" data-aos="zoom-out" data-aos-duration="900">Подайте заявку, чтобы получить бесплатную консультацию от наших специалистов</h2>
+                <a href="#contact" data-aos="zoom-out" data-aos-duration="1100" class="btn btn-primary" aria-label="Open Contact Section" data-i18n="pricing_svyaz">Связаться с нами</a>
             </div>
         </div>
     </section>
@@ -391,10 +520,10 @@
     <!-- blog section -->
    <section class="blog" id="blog">
     <div class="container">
-        <h2 class="section-title" data-i18n="blog_title">Блог / Инфораздел - Советы по легализации</h2>
+        <h2 class="section-title" data-aos="fade-down" data-i18n="blog_title">Блог / Инфораздел - Советы по легализации</h2>
 
         <div class="blog-grid">
-            <div class="blog-card">
+            <div class="blog-card" data-aos="fade-right">
                 <div class="blog-image">
                     <img src="images/legal.webp" alt="Blog Post">
                 </div>
@@ -408,7 +537,7 @@
                 </div>
             </div>
 
-            <div class="blog-card">
+            <div class="blog-card" data-aos="fade-up">
                 <div class="blog-image">
                     <img src="images/urist.webp" alt="Blog Post">
                 </div>
@@ -422,7 +551,7 @@
                 </div>
             </div>
 
-            <div class="blog-card">
+            <div class="blog-card" data-aos="fade-left">
                 <div class="blog-image">
                     <img src="images/legal.webp" alt="Blog Post">
                 </div>
@@ -446,7 +575,7 @@
         <h2 class="section-title" data-i18n="faq_title">Часто задаваемые вопросы</h2>
 
         <div class="faq-container">
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1000">
                 <div class="faq-question">
                     <h3 data-i18n="faq_1_q">Сколько времени занимает трудоустройство через ваше агентство?</h3>
                     <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -456,7 +585,7 @@
                 </div>
             </div>
 
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <div class="faq-question">
                     <h3 data-i18n="faq_2_q">Вы помогаете с легализацией пребывания в Польше?</h3>
                     <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -466,7 +595,7 @@
                 </div>
             </div>
 
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1400">
                 <div class="faq-question">
                     <h3 data-i18n="faq_3_q">Какие документы мне нужны для начала?</h3>
                     <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -476,7 +605,7 @@
                 </div>
             </div>
 
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1600">
                 <div class="faq-question">
                     <h3 data-i18n="faq_4_q">Я не говорю по-польски — это проблема?</h3>
                     <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -486,7 +615,7 @@
                 </div>
             </div>
 
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1800">
                 <div class="faq-question">
                     <h3 data-i18n="faq_5_q">Вы берёте оплату за трудоустройство?</h3>
                     <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -497,7 +626,7 @@
             </div>
         </div>
 
-        <div class="faq-cta">
+        <div class="faq-cta" data-aos="fade-up">
             <a href="#contact" class="btn btn-primary" data-i18n="pricing_svyaz">Связаться с нами</a>
         </div>
     </div>
@@ -506,7 +635,7 @@
 
     <!-- Partners Section -->
     <section class="partners">
-        <div class="container" id="pcont">
+        <div class="container" id="pcont" data-aos="fade-up" data-aos-duration="1000">
             <h2 class="section-title" data-i18n="partners_title"></h2>
             <p class="p-title" style="font: uppercase, bold;" data-i18n="partners_desc">это надёжные работодатели из Европы, с которыми мы сотрудничаем напрямую в сфере подбора персонала. Мы отбираем только проверенные компании, которые предлагают легальное трудоустройство, стабильную оплату и достойные условия труда для наших кандидатов из Центральной Азии.</p>
         </div>
@@ -515,8 +644,8 @@
     <!-- Enhanced Contact Form with Submission -->
 <section class="contact" id="contact">
   <div class="container">
-    <h2 class="section-title" data-i18n="contact_title">Чем мы можем вам помочь?</h2>
-    <div class="contact-form-container">
+    <h2 class="section-title" data-i18n="contact_title" data-aos="fade-up">Чем мы можем вам помочь?</h2>
+    <div class="contact-form-container" data-aos="fade-up">
       <form class="contact-form" id="contactform">
         <div class="form-row">
           <div class="form-group">
@@ -566,12 +695,12 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-logo" data-aos="fade-up">
                     <a href="index.html"><img src="images/logo-safed.png"  alt="Logo of Sadykov Group sp. z.o.o"></a>
                 </div>
                 
                 <div class="footer-links">
-                    <div class="footer-column">
+                    <div class="footer-column" data-aos="fade-up">
                         <h3 data-i18n="footer_quick_links">Быстрые ссылки</h3>
                         <ul>
                             <li><a href="#" aria-label="Open Home" data-i18n="nav_home">Главная</a></li>
@@ -581,7 +710,7 @@
                             <li><a href="#faq" aria-label="Open FAQ Section" data-i18n="nav_faq">FAQ</a></li>
                         </ul>
                     </div>
-                    <div class="footer-column">
+                    <div class="footer-column" data-aos="fade-up">
                         <h3  data-i18n="btn_contact">Контакты</h3>
                         <ul>
                             <li><i class="fas fa-phone"></i> +48 668 876 800</li>
@@ -593,7 +722,7 @@
                     </div>
 
                     
-                    <div class="footer-column">
+                    <div class="footer-column" data-aos="fade-up">
                         <h3 data-i18n="footer_follow">Follow Us</h3>
                         <div class="social-icons">
                             <a href="https://www.facebook.com/profile.php?id=61571769044315"><i class="fab fa-facebook-f"></i></a>
@@ -612,7 +741,7 @@
     </footer>
     </main>
 
-    <script src="js/script.min.js" defer></script>
+    <script src="js/script.js" defer></script>
  
     <script>
     document.getElementById('contactform').addEventListener('submit', function(e) {
@@ -636,7 +765,8 @@
     });
     
 </script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/asoapp.js"></script>
 
 
 </body>

@@ -682,7 +682,6 @@ ul {
 .services {
     background-color: var(--primary-color);
     color: var(--text-light);
-    margin-bottom: 30px;
 }
 
 .services .section-title {
@@ -762,28 +761,27 @@ ul {
 
 /* Banner Section */
 .banner {
-    background-image: url('../images/skyscar.jpg');
+    position: relative;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                      url('../images/skyscar.jpg');
     background-size: cover;
     background-position: center;
-    color: var(--text-light);
-    padding: 100px 0;
-    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: white;
 }
 
-.banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+
+
 
 .banner-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .banner-content h2 {
@@ -796,7 +794,6 @@ ul {
     font-size: 2.5rem;
     color: var(--secondary-color);
 }
-
 /* Statistics Section */
 .statistics {
     padding: 80px 0;
@@ -942,87 +939,290 @@ ul {
 }
 
 /* Testimonials Section */
-.testimonials {
-    padding: 100px 0;
-    background-color: #f9f9f9;
+.google-review-section {
+  padding: 80px 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 80px;
 }
 
-.testimonial-controls {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 40px;
+.review-heading {
+  max-width: 1180px;
+  margin: 0 auto 28px;
 }
 
-.prev-btn, .next-btn {
-    background-color: var(--bg-light);
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
+.review-step {
+  display: block;
+  font-size: 58px;
+  line-height: 1;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 12px;
 }
 
-.prev-btn:hover, .next-btn:hover {
-    background-color: var(--secondary-color);
+.review-heading h2 {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 800;
+  color: #000000;
 }
 
-.testimonials-container {
-    position: relative;
-    overflow: hidden;
+.review-slider-box {
+  max-width: 1280px;
+  width: min(90%, 12800px); 
+  padding: clamp(12px, 2vw, 24px);
+  border-radius: clamp(10px, 1.5vw, 20px);
+  margin: 0 auto;
+  background: #f4f4f4;
+  border-radius: 18px;
+  padding: 45px 55px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
-.testimonial-slide {
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
+.review-slider-wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
-.testimonial-slide.active {
-    display: flex;
+.review-slider {
+  display: flex;
+  gap: 22px;
+  transition: transform 0.5s ease;
+  will-change: transform;
 }
 
-
-.testimonial-content {
-    flex: 2;
-    padding: 30px;
-    background-color: var(--primary-color);
-    color: var(--text-light);
-    border-radius: 10px;
-    position: relative;
+.review-card {
+  flex: 0 0 calc((100% - 44px) / 3);
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px 20px;
+  min-height: 250px;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 0.88;
 }
 
-.rating {
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
-.testimonial-text {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    font-style: italic;
+.review-card.active {
+  opacity: 1;
+  transform: scale(1.02);
 }
 
-.client-name {
-    font-weight: 600;
-    margin-bottom: 5px;
+.review-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
 }
 
-.client-title {
-    font-size: 0.9rem;
-    opacity: 0.8;
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  flex-shrink: 0;
 }
 
-#btnn{
-    display: none;
+.review-user h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #222;
 }
+
+.stars {
+  margin-top: 5px;
+  color: #fbbc04;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.review-text {
+  margin: 14px 0 22px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+.review-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #777;
+  margin-top: auto;
+}
+
+.google-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 6px 12px;
+  font-weight: 600;
+  color: #4285f4;
+}
+
+.review-time {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 8px 20px rgba(109, 43, 255, 0.3);
+  transition:  0.3s ease, transform 0.3s ease;
+}
+
+.slider-btn:hover {
+  background: var(--secondary-color);
+}
+
+.slider-btn.prev {
+  left: 12px;
+}
+
+.slider-btn.next {
+  right: 12px;
+}
+
+@media (max-width: 992px) {
+  .review-card {
+    flex: 0 0 calc((100% - 22px) / 2);
+  }
+
+  .review-heading h2 {
+    font-size: 34px;
+  }
+
+  .review-step {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 640px) {
+  .google-review-section {
+    padding: 60px 14px;
+  }
+
+  .review-slider-box {
+    width: min(90%, 500px);
+    padding: clamp(12px, 2vw, 24px);
+    border-radius: clamp(10px, 1.5vw, 20px);
+    padding: 50px 38px 30px;
+  }
+
+  .review-card {
+    flex: 0 0 100%;
+    min-height: auto;
+  }
+
+  .review-heading h2 {
+    font-size: 28px;
+  }
+
+  .review-step {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 340px) {
+.review-slider-box {
+    width: 300px;
+}
+}
+
+.google-rating-box {
+  max-width: 1280px;
+  background: #fff;
+  padding: 16px 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  scale: 1.8;
+  
+ 
+}
+
+.rating-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.google-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.rating-title {
+  font-size: 13px;
+  color: #777;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.rating-stars strong {
+  font-size: 20px;
+  color: #222;
+}
+
+.rating-stars .stars {
+  color: #fbbc04;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.see-reviews {
+  font-size: 12px;
+  color: #777;
+  text-decoration: none;
+}
+
+.see-reviews:hover {
+  text-decoration: underline;
+} 
+
 /* Community Section */
 .community {
     background-image: url('../images/wars.jpg');
@@ -1030,6 +1230,12 @@ ul {
     background-position: center;
     padding: 80px 0;
     position: relative;
+    background-attachment: fixed;
+    color: var(--text-light);
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
 }
 
 .community::before {
@@ -1196,11 +1402,13 @@ ul {
     background-image: url(../images/skyscar.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     color: var(--text-light);
     position: relative;
     text-align: center;
     padding: 80px 0;
     overflow: hidden;
+
 }
 
 .partners::before {
@@ -1453,7 +1661,7 @@ ul {
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
-        transition: var(--transition);
+        transition: all 0.5s ease;
     }
     
     .nav-menu.active {

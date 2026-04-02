@@ -172,6 +172,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+
+    //Reviews SLider Section
     
     // Set initial state for animation
     animateElements.forEach(el => {
@@ -228,6 +231,7 @@ console.log(data);
 
 // default to 'pl'
 document.addEventListener("DOMContentLoaded", () => {
+  localStorage.removeItem("lang");
   const savedLang = localStorage.getItem('lang') || 'pl';
   setLanguage(savedLang);
 });
@@ -244,3 +248,129 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+//Count NAimation
+document.addEventListener("DOMContentLoaded", () => {
+
+  const counters = document.querySelectorAll(".stat-number");
+  const section = document.querySelector(".statistics");
+  let started = false;
+
+  function startCounters() {
+
+    if (started) return;
+    started = true;
+
+    counters.forEach(counter => {
+
+      const text = counter.innerText.trim();
+
+      const number = parseInt(text.replace(/\D/g, ""));
+      const symbol = text.replace(/[0-9]/g, "");
+
+      let current = 0;
+      const increment = number / 100;
+
+      function updateCounter() {
+        current += increment;
+
+        if (current < number) {
+          counter.innerText = Math.ceil(current) + symbol;
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.innerText = number + symbol;
+        }
+      }
+
+      counter.innerText = "0" + symbol;
+      updateCounter();
+
+    });
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startCounters();
+      }
+    });
+  }, { threshold: 0.4 });
+
+  observer.observe(section);
+
+});
+
+// //paralax 
+// const bannerBg = document.querySelector('.banner-bg');
+
+// window.addEventListener('scroll', () => {
+//     const scroll = window.pageYOffset;
+//     bannerBg.style.transform = `translateY(${scroll * 0.3}px)`; 
+// });
+
+// window.addEventListener('scroll', function () {
+//     const banner = document.querySelector('.banner');
+//     const bg = document.querySelector('.banner-bg');
+
+//     if (!banner || !bg) return;
+
+//     const rect = banner.getBoundingClientRect();
+//     const speed = 0.3;
+
+//     if (rect.bottom > 0 && rect.top < window.innerHeight) {
+//         const offset = rect.top * speed;
+//         bg.style.transform = `translateY(${offset}px)`;
+//     }
+// });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.getElementById("reviewSlider");
+  const cards = document.querySelectorAll(".review-card");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  let currentIndex = 0;
+
+  function getCardsPerView() {
+    if (window.innerWidth <= 640) return 1;
+    if (window.innerWidth <= 992) return 2;
+    return 3;
+  }
+
+  function updateSlider() {
+    const cardsPerView = getCardsPerView();
+    const gap = 22;
+    const cardWidth = cards[0].offsetWidth + gap;
+    const maxIndex = Math.max(cards.length - cardsPerView, 0);
+
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+    cards.forEach(card => card.classList.remove("active"));
+
+    for (let i = currentIndex; i < currentIndex + cardsPerView; i++) {
+      if (cards[i]) cards[i].classList.add("active");
+    }
+  }
+
+  nextBtn.addEventListener("click", function () {
+    const cardsPerView = getCardsPerView();
+    const maxIndex = Math.max(cards.length - cardsPerView, 0);
+
+    currentIndex = currentIndex < maxIndex ? currentIndex + 1 : 0;
+    updateSlider();
+  });
+
+  prevBtn.addEventListener("click", function () {
+    const cardsPerView = getCardsPerView();
+    const maxIndex = Math.max(cards.length - cardsPerView, 0);
+
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : maxIndex;
+    updateSlider();
+  });
+
+  window.addEventListener("resize", updateSlider);
+
+  updateSlider();
+});
