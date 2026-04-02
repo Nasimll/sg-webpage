@@ -40,38 +40,38 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // // Testimonials Slider
-    // const testimonialSlides = document.querySelectorAll('.testimonial-slide');
-    // const prevBtn = document.querySelector('.prev-btn');
-    // const nextBtn = document.querySelector('.next-btn');
-    // let currentSlide = 0;
+    // Testimonials Slider
+    const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    let currentSlide = 0;
     
-    // function showSlide(index) {
-    //     testimonialSlides.forEach((slide, i) => {
-    //         slide.classList.remove('active');
-    //         if (i === index) {
-    //             slide.classList.add('active');
-    //         }
-    //     });
-    // }
+    function showSlide(index) {
+        testimonialSlides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) {
+                slide.classList.add('active');
+            }
+        });
+    }
     
-    // if (prevBtn && nextBtn && testimonialSlides.length > 0) {
-    //     prevBtn.addEventListener('click', function() {
-    //         currentSlide = (currentSlide - 1 + testimonialSlides.length) % testimonialSlides.length;
-    //         showSlide(currentSlide);
-    //     });
+    if (prevBtn && nextBtn && testimonialSlides.length > 0) {
+        prevBtn.addEventListener('click', function() {
+            currentSlide = (currentSlide - 1 + testimonialSlides.length) % testimonialSlides.length;
+            showSlide(currentSlide);
+        });
         
-    //     nextBtn.addEventListener('click', function() {
-    //         currentSlide = (currentSlide + 1) % testimonialSlides.length;
-    //         showSlide(currentSlide);
-    //     });
+        nextBtn.addEventListener('click', function() {
+            currentSlide = (currentSlide + 1) % testimonialSlides.length;
+            showSlide(currentSlide);
+        });
         
-    //     // Auto slide every 5 seconds
-    //     setInterval(function() {
-    //         currentSlide = (currentSlide + 1) % testimonialSlides.length;
-    //         showSlide(currentSlide);
-    //     }, 5000);
-    // }
+        // Auto slide every 5 seconds
+        setInterval(function() {
+            currentSlide = (currentSlide + 1) % testimonialSlides.length;
+            showSlide(currentSlide);
+        }, 5000);
+    }
     
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
@@ -322,6 +322,19 @@ document.addEventListener("DOMContentLoaded", () => {
 //     }
 // });
 
+// ===== HEADER SCROLL =====
+window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+
+    if (window.scrollY > 50) {
+        header.classList.remove("transparent");
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+        header.classList.add("transparent");
+    }
+});
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const slider = document.getElementById("reviewSlider");
@@ -374,3 +387,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateSlider();
 });
+
+
