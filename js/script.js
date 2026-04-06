@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Add animation on scroll
-    const animateElements = document.querySelectorAll('section');
+    const animateElements = document.querySelectorAll('section:not(.hero-section)');
     
     function checkScroll() {
         animateElements.forEach(el => {
