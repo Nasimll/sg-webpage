@@ -322,6 +322,7 @@ ul {
     align-items: center;
     gap: 160px;
     height: 100vh;
+    background-color: var(--primary-color);
 
 }
 .hero-video {
@@ -1662,6 +1663,7 @@ ul {
         opacity: 0;
         visibility: hidden;
         transition: all 0.5s ease;
+        text-align: center;
     }
     
     .nav-menu.active {
