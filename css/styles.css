@@ -76,6 +76,7 @@ ul {
 
   .lang-select:hover {
     background-color: #ddd;
+    color: var(--primary-color);
   }
 
   .lang-dropdown {
@@ -480,7 +481,7 @@ ul {
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .section-description {
@@ -692,26 +693,37 @@ ul {
 .services-grid {
     display: flex;
     gap: 30px;
-    margin-top: 50px;
 }
 
 .service-column {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 
 .service-item {
-    height: 330px;
+    min-height: 330px;
+    border-radius: 10px;
+}
+
+.service-inner {
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.05);
     padding: 30px;
     border-radius: 10px;
-    transition: var(--transition);
+    transition: transform .8s ease, background-color 0.4s ease, box-shadow 0.4s ease;
 }
 
-.service-item:hover {
-    transform: translateY(-5px);
+.service-item:hover .service-inner {
+    background-color: var(--secondary-color);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    color: var(--primary-color);
+}
+
+.service-item:hover .service-icon{
+    color: var(--primary-color);
 }
 
 .service-icon {
