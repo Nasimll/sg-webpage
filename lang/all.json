@@ -1,0 +1,491 @@
+{
+  "language": "🌐EN ▾",
+
+
+  "nav_home": "Home",
+  "nav_about": "About Us",
+  "nav_services": "Services",
+  "nav_reviews": "Reviews",
+  "nav_faq": "FAQ",
+  "btn_contact": "Contact",
+
+
+  "hero_title": "Legal Employment with Full",
+  "hero_title_g": "Support in Poland",
+  "hero_desc": "We help find stable employment, handle all necessary documents, and start working officially and safely in Poland and across Europe",
+  "btn_find_job": "Find a Job",
+  "btn_find_employees": "For Employers",
+
+
+  "about_title": "Comprehensive Employment and Legalization Services for Foreigners",
+  "about_desc": "Our main goal is to assist with legal employment and integration in Poland. Since 2018, we have successfully supported thousands of employees and partnered with hundreds of trusted employers across the country",
+  "card_1": "Looking for a job in Poland with official employment?",
+  "card_2": "Need professional help with legalization?",
+  "card_3": "Looking for reliable employees?",
+
+
+  "timeline_title": "Our Experience and Advantages",
+  "timeline_2022": "Agency founded and operations launched on the Polish market",
+  "timeline_2023": "Over 1,000 successfully placed candidates",
+  "timeline_2024": "Service expansion and launch of the legalization department",
+  "timeline_2025": "Development of online services and simplified application process",
+
+
+  "services_title": "Services of the SADYKOV GROUP Employment Agency",
+  "services_1": "Factory Jobs",
+  "services_1_desc": "Employment at trusted and reliable enterprises in Poland with official contracts, stable wages, and full compliance with labor regulations",
+  "services_2": "Warehouses & Production",
+  "services_2_desc": "Work at major logistics centers and modern production lines with opportunities for long-term cooperation and career growth",
+  "services_3": "Residence & Work Legalization",
+  "services_3_desc": "Full support throughout the legalization process: obtaining a residence card, work permits, family reunification, and other legal procedures",
+  "services_4": "Driver's License Exchange",
+  "services_4_desc": "Assistance in exchanging a foreign driver's license for a Polish one with minimal processing times and a clear procedure",
+  "services_5": "HR Outsourcing",
+  "services_5_desc": "Comprehensive support for the recruitment process, document preparation, and workforce management",
+  "services_6": "Audit & Legal Verification",
+  "services_6_desc": "Verification of legalization and employment of foreign workers in your company to identify and resolve potential violations",
+
+
+  "statistics_title": "Our Achievements",
+  "stats_1": "Candidates Employed",
+  "stats_2": "Satisfied Employers",
+  "stats_3": "Successful Legalization Processes",
+  "stats_4": "Active Job Offers Monthly",
+
+
+  "banner_subtitle": "With us, it's simple",
+
+
+  "pricing_title": "Service Packages",
+  "pricing_card_1_title": "Employment Assistance",
+  "pricing_card_1_price": "No Upfront Payment",
+  "pricing_card_1_1": "Access to current and verified job offers",
+  "pricing_card_1_2": "Employment consultation",
+  "pricing_card_1_3": "Assistance with preparing required documents",
+  "pricing_card_1_4": "Support at every stage of the process",
+  "pricing_card_2_title": "Full Package",
+  "pricing_svyaz": "Contact us",
+  "pricing_card_2_price": "from 500",
+  "pricing_card_2_period": "PLN",
+  "pricing_card_2_1": "Preparation and submission of documents for residence card application",
+  "pricing_card_2_2": "Appeal against a negative decision and process supervision",
+  "pricing_card_2_3": "Assistance with submitting additional documents",
+  "pricing_card_2_4": "Case transfer and representation at the relevant authorities",
+  "pricing_card_3_title": "For Employers",
+  "pricing_card_3_price": "Individually",
+  "pricing_card_3_period": "To be agreed",
+  "pricing_card_3_1": "Permanent and temporary recruitment",
+  "pricing_card_3_2": "Full employee support",
+  "pricing_card_3_3": "Legalization and employment outsourcing",
+  "pricing_card_3_4": "Legal audit and consultations",
+
+
+  "testimonials_title": "Reviews & Client Trust",
+  "testimonial_1_text": "I came to Poland from Hungary with a Hungarian residence card. Everything about legalization was unclear to me. Fortunately, I found Sadykov Group — they took care of all the paperwork and guided me through the entire process. Now everything is clear, and my legalization process is underway. I am very grateful!",
+  "testimonial_2_text": "I submitted my residence card application in Poland through Sadykov Group — I quickly received a stamp in my passport, and I'm now confident I'll get a decision and the card soon. Thank you to the whole team for your professionalism and quick assistance!",
+  "testimonial_3_text": "Hello, my name is Tavrat Behkovjan. I arrived from Slovakia seven months ago. I applied for legalization through the Sadykov group and found a job. I found them in a Telegram group. Today I submitted my fingerprints and they issued me a red stamp. Thank you very much!",
+
+
+  "community_cta": "Submit a request and get a free consultation from our specialists",
+
+
+  "contact_title": "How can we help you?",
+  "contact_name": "Name*",
+  "contact_email": "Email*",
+  "contact_phone": "Phone*",
+  "contact_subject": "Selected Service",
+  "subject_option_1": "Employment",
+  "subject_option_2": "Legalization",
+  "subject_option_3": "Legal Consultation",
+  "subject_option_4": "Housing Assistance",
+  "subject_option_5": "Other",
+  "contact_message": "Message",
+  "contact_checkbox": "I agree to the processing of personal data in accordance with the privacy policy*",
+  "contact_submit": "Submit Request",
+  "contact_titles": "How can we help you?",
+  "contact_label_name": "Name*",
+  "contact_placeholder_name": "Your name",
+  "contact_label_email": "Email*",
+  "contact_placeholder_email": "example@domain.com",
+  "contact_label_phone": "Phone*",
+  "contact_placeholder_phone": "+48XXXXXXXXX",
+  "contact_label_subject": "Selected Service",
+  "contact_option_placeholder": "Choose a service",
+  "contact_option_1": "Employment",
+  "contact_option_2": "Legalization",
+  "contact_option_3": "Legal Consultation",
+  "contact_option_4": "Housing Assistance",
+  "contact_option_5": "Other",
+  "contact_label_message": "Message",
+  "contact_placeholder_message": "Describe your issue",
+  "contact_label_privacy": "I agree to the processing of personal data in accordance with the privacy policy*",
+  "contact_button_submit": "Submit Request",
+
+
+  "faq_title": "Frequently Asked Questions",
+  "faq_1_q": "How long does the employment process take through your agency?",
+  "faq_1_a": "On average 1 to 3 days, depending on the chosen position and availability of required documents",
+  "faq_2_q": "Do you assist with residence legalization in Poland?",
+  "faq_2_a": "Yes, we provide full support at every stage of legalization and interaction with government authorities",
+  "faq_3_q": "What documents are required?",
+  "faq_3_a": "Typically a passport and basic information about your job preferences are required",
+  "faq_4_q": "I don't speak Polish – is that a problem?",
+  "faq_4_a": "No, most of our job offers do not require knowledge of the Polish language, and we select options accordingly",
+  "faq_5_q": "Do you charge fees for employment?",
+  "faq_5_a": "No, employment is provided without any upfront payment — fees apply only after starting work",
+
+
+  "partners_title": "Our Partners",
+  "partners_desc": "We work with trusted employers across Poland",
+
+
+  "footer_quick_links": "Navigation",
+  "footer_contact": "Contact",
+  "footer_follow": "Follow Us",
+  "footer_copyright": "© 2025 Sadykov Group. All rights reserved.",
+
+
+  "blog_title": "Useful Information and Tips",
+  "blog_cat_1": "Legalization",
+  "blog_cat_2": "Employment",
+  "blog_cat_3": "Tips",
+  "blog_1_title": "How to Get a Work Permit in Poland: A Step-by-Step Guide?",
+  "blog_2_title": "Top Job Offers in Poland for Foreign Workers?",
+  "blog_3_title": "What You Should Know Before Starting Work Abroad?",
+  "data-last": "Read More",
+
+
+  "client-name": "Olojberdi",
+  "client-name-2": "Nurbek",
+  "client-name-3": "Tavrat"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "language": "🌐PL ▾",
+
+
+  "nav_home": "Strona główna",
+  "nav_about": "O nas",
+  "nav_services": "Usługi",
+  "nav_reviews": "Opinie",
+  "nav_faq": "FAQ",
+  "btn_contact": "Kontakt",
+
+
+  "hero_title": "Legalna praca z pełnym",
+  "hero_title_g": "wsparciem w Polsce",
+  "hero_desc": "Pomagamy znaleźć stabilną pracę, załatwić wszystkie niezbędne dokumenty i rozpocząć pracę oficjalnie i bezpiecznie na terenie Polski i Europy",
+  "btn_find_job": "Znajdź pracę",
+  "btn_find_employees": "Dla pracodawców",
+
+
+  "about_title": "Kompleksowe usługi zatrudnienia i legalizacji dla cudzoziemców",
+  "about_desc": "Naszym głównym celem jest pomoc w legalnym zatrudnieniu i adaptacji w Polsce. Od 2018 roku z powodzeniem wspieramy tysiące pracowników i współpracujemy z setkami sprawdzonych pracodawców w całym kraju",
+  "card_1": "Szukasz pracy w Polsce z oficjalnym zatrudnieniem?",
+  "card_2": "Potrzebujesz profesjonalnej pomocy z legalizacją?",
+  "card_3": "Szukasz sprawdzonych pracowników?",
+
+
+  "timeline_title": "Nasze doświadczenie i przewagi",
+  "timeline_2022": "Założenie agencji i rozpoczęcie działalności na polskim rynku",
+  "timeline_2023": "Ponad 1000 skutecznie zatrudnionych kandydatów",
+  "timeline_2024": "Rozszerzenie usług i uruchomienie działu legalizacji",
+  "timeline_2025": "Rozwój usług online i uproszczenie procesu składania wniosków",
+
+
+  "services_title": "Usługi agencji pośrednictwa pracy SADYKOV GROUP",
+  "services_1": "Praca w fabrykach",
+  "services_1_desc": "Zatrudnienie w sprawdzonych i niezawodnych zakładach w Polsce z oficjalnymi umowami, stabilnym wynagrodzeniem i przestrzeganiem wszystkich norm prawa pracy",
+  "services_2": "Magazyny i produkcja",
+  "services_2_desc": "Praca w dużych centrach logistycznych i na nowoczesnych liniach produkcyjnych z możliwością długoterminowej współpracy i rozwoju kariery",
+  "services_3": "Legalizacja pobytu i pracy",
+  "services_3_desc": "Pełne wsparcie w procesie legalizacji: uzyskanie karty pobytu, zezwoleń na pracę, łączenie rodzin i inne procedury prawne",
+  "services_4": "Pomoc w wymianie prawa jazdy",
+  "services_4_desc": "Wsparcie w wymianie zagranicznego prawa jazdy na polskie w możliwie najkrótszym czasie i w przejrzysty sposób",
+  "services_5": "Outsourcing HR",
+  "services_5_desc": "Kompleksowa obsługa procesu rekrutacji, przygotowania dokumentów i zarządzania zasobami ludzkimi",
+  "services_6": "Audyt i weryfikacja prawna",
+  "services_6_desc": "Weryfikacja legalizacji i zatrudnienia cudzoziemców w Twojej firmie w celu wykrycia i usunięcia ewentualnych nieprawidłowości",
+
+
+  "statistics_title": "Nasze osiągnięcia",
+  "stats_1": "Zatrudnionych kandydatów",
+  "stats_2": "Zadowolonych pracodawców",
+  "stats_3": "Skutecznych procesów legalizacji",
+  "stats_4": "Aktualnych ofert pracy miesięcznie",
+
+
+  "banner_subtitle": "Z nami to proste",
+
+
+  "pricing_title": "Pakiety usług",
+  "pricing_card_1_title": "Pomoc w zatrudnieniu",
+  "pricing_card_1_price": "Bez przedpłaty",
+  "pricing_card_1_1": "Dostęp do aktualnych i sprawdzonych ofert pracy",
+  "pricing_card_1_2": "Konsultacja w zakresie zatrudnienia",
+  "pricing_card_1_3": "Pomoc w przygotowaniu niezbędnych dokumentów",
+  "pricing_card_1_4": "Wsparcie na każdym etapie współpracy",
+  "pricing_card_2_title": "Pełny pakiet",
+  "pricing_svyaz": "Skontaktuj się z nami",
+  "pricing_card_2_price": "od 500",
+  "pricing_card_2_period": "PLN",
+  "pricing_card_2_1": "Przygotowanie i złożenie dokumentów do wniosku o kartę pobytu",
+  "pricing_card_2_2": "Odwołanie od decyzji negatywnej i nadzór nad procesem",
+  "pricing_card_2_3": "Pomoc przy składaniu dodatkowych dokumentów",
+  "pricing_card_2_4": "Przekazanie sprawy i jej obsługa w odpowiednich urzędach",
+  "pricing_card_3_title": "Dla pracodawców",
+  "pricing_card_3_price": "Indywidualnie",
+  "pricing_card_3_period": "Do uzgodnienia",
+  "pricing_card_3_1": "Rekrutacja stała i tymczasowa",
+  "pricing_card_3_2": "Pełna obsługa pracowników",
+  "pricing_card_3_3": "Outsourcing legalizacji i zatrudnienia",
+  "pricing_card_3_4": "Audyt prawny i konsultacje",
+
+
+  "testimonials_title": "Opinie i zaufanie klientów",
+  "testimonial_1_text": "Przyjechałem do Polski z Węgier, mając węgierską kartę pobytu. Wszystko związane z legalizacją było dla mnie niejasne. Na szczęście trafiłem na Sadykov Group — zajęli się całą dokumentacją i poprowadzili mnie przez cały proces. Teraz wszystko jest jasne, a mój proces legalizacji już trwa. Jestem im bardzo wdzięczny!",
+  "testimonial_2_text": "Złożyłem wniosek o kartę pobytu w Polsce przez Sadykov Group — bardzo szybko otrzymałem pieczątkę w paszporcie i teraz jestem pewien, że wkrótce dostanę decyzję i kartę. Dziękuję całemu zespołowi za profesjonalizm i szybką pomoc!",
+  "testimonial_3_text": "Cześć, nazywam się Tavrat Behkovjan. Przyjechałem ze Słowacji siedem miesięcy temu. Złożyłem wniosek o legalizację w grupie Sadykova i znalazłem pracę. Znalazłem ich w grupie na Telegramie. Dzisiaj złożyłem odcisk palca i wydali mi czerwoną pieczątkę. Dziękuję bardzo!",
+
+
+  "community_cta": "Złóż wniosek i uzyskaj bezpłatną konsultację od naszych specjalistów",
+
+
+  "contact_title": "W czym możemy Ci pomóc?",
+  "contact_name": "Imię*",
+  "contact_email": "Email*",
+  "contact_phone": "Telefon*",
+  "contact_subject": "Wybrana usługa",
+  "subject_option_1": "Zatrudnienie",
+  "subject_option_2": "Legalizacja",
+  "subject_option_3": "Konsultacja prawna",
+  "subject_option_4": "Pomoc mieszkaniowa",
+  "subject_option_5": "Inne",
+  "contact_message": "Wiadomość",
+  "contact_checkbox": "Zgadzam się na przetwarzanie danych osobowych zgodnie z polityką prywatności*",
+  "contact_submit": "Wyślij zgłoszenie",
+  "contact_titles": "W czym możemy Ci pomóc?",
+  "contact_label_name": "Imię*",
+  "contact_placeholder_name": "Twoje imię",
+  "contact_label_email": "Email*",
+  "contact_placeholder_email": "example@domain.com",
+  "contact_label_phone": "Telefon*",
+  "contact_placeholder_phone": "+48XXXXXXXXX",
+  "contact_label_subject": "Wybrana usługa",
+  "contact_option_placeholder": "Wybierz usługę",
+  "contact_option_1": "Zatrudnienie",
+  "contact_option_2": "Legalizacja",
+  "contact_option_3": "Konsultacja prawna",
+  "contact_option_4": "Pomoc mieszkaniowa",
+  "contact_option_5": "Inne",
+  "contact_label_message": "Wiadomość",
+  "contact_placeholder_message": "Opisz swój problem",
+  "contact_label_privacy": "Zgadzam się na przetwarzanie danych osobowych zgodnie z polityką prywatności*",
+  "contact_button_submit": "Wyślij zgłoszenie",
+
+
+  "faq_title": "Najczęściej zadawane pytania",
+  "faq_1_q": "Ile trwa proces zatrudnienia przez waszą agencję?",
+  "faq_1_a": "Średnio od 1 do 3 dni, w zależności od wybranej oferty pracy i dostępności wymaganych dokumentów",
+  "faq_2_q": "Czy pomagacie z legalizacją pobytu w Polsce?",
+  "faq_2_a": "Tak, oferujemy pełne wsparcie na wszystkich etapach legalizacji i kontaktów z organami państwowymi",
+  "faq_3_q": "Jakie dokumenty są potrzebne?",
+  "faq_3_a": "Zazwyczaj wymagany jest paszport oraz podstawowe informacje o Twoich preferencjach zawodowych",
+  "faq_4_q": "Nie mówię po polsku — czy to problem?",
+  "faq_4_a": "Nie, większość naszych ofert nie wymaga znajomości języka polskiego, dobieramy oferty z uwzględnieniem tego faktu",
+  "faq_5_q": "Czy pobieracie opłaty za zatrudnienie?",
+  "faq_5_a": "Nie, zatrudnienie odbywa się bez przedpłaty, opłata jest możliwa dopiero po podjęciu pracy",
+
+
+  "partners_title": "Nasi partnerzy",
+  "partners_desc": "Współpracujemy ze sprawdzonymi pracodawcami z całej Polski",
+
+
+  "footer_quick_links": "Nawigacja",
+  "footer_contact": "Kontakt",
+  "footer_follow": "Obserwuj nas",
+  "footer_copyright": "© 2025 Sadykov Group. Wszelkie prawa zastrzeżone.",
+
+
+  "blog_title": "Przydatne informacje i porady",
+  "blog_cat_1": "Legalizacja",
+  "blog_cat_2": "Zatrudnienie",
+  "blog_cat_3": "Porady",
+  "blog_1_title": "Jak uzyskać pozwolenie na pracę w Polsce: przewodnik krok po kroku?",
+  "blog_2_title": "Najlepsze oferty pracy w Polsce dla cudzoziemców?",
+  "blog_3_title": "Co warto wiedzieć przed rozpoczęciem pracy za granicą?",
+  "data-last": "Czytaj więcej",
+
+
+  "client-name": "Olojberdi",
+  "client-name-2": "Nurbek",
+  "client-name-3": "Tavrat"
+}
+
+
+
+
+
+
+
+
+
+{
+  "language": "🌐RU ▾",
+
+  "nav_home": "Главная",
+  "nav_about": "О нас",
+  "nav_services": "Услуги",
+  "nav_reviews": "Отзывы",
+  "nav_faq": "FAQ",
+  "btn_contact": "Связаться",
+
+  "hero_title": "Легальная работа с полным",
+  "hero_title_g": "сопровождением в Польше",
+  "hero_desc": "Мы помогаем найти стабильную работу, оформить все необходимые документы и начать работать официально и безопасно на территории Польши и в Европе",
+  "btn_find_job": "Найти работу" ,
+  "btn_find_employees": "Для работодателей",
+
+  "about_title": "Комплексные услуги по трудоустройству и легализации для иностранных граждан",
+  "about_desc": "Наша основная цель — помощь в легальном трудоустройстве и адаптации в Польше. С 2018 года мы успешно сопровождаем тысячи сотрудников и сотрудничаем с сотнями надежных работодателей по всей стране",
+
+  "card_1": "Ищете работу в Польше с официальным оформлением?",
+  "card_2": "Нужна профессиональная помощь с легализацией ?",
+  "card_3": "Ищете надежных сотрудников?",
+
+  "timeline_title": "Наш опыт и преимущества",
+  "timeline_2022": "Основание агентства и начало работы на польском рынке",
+  "timeline_2023": "Более 1000 успешно трудоустроенных кандидатов",
+  "timeline_2024": "Расширение услуг и запуск отдела легализации",
+  "timeline_2025": "Развитие онлайн-сервисов и упрощение процесса подачи заявок",
+
+  "services_title": "Услуги кадрового агентства SADYKOV GROUP",
+
+  "services_1": "Работа на фабриках",
+  "services_1_desc": "Трудоустройство на проверенные и надежные предприятия Польши с официальными контрактами, стабильной заработной платой и соблюдением всех трудовых норм",
+
+  "services_2": "Склады и производство",
+  "services_2_desc": "Работа в крупных логистических центрах и на современных производственных линиях с возможностью долгосрочного сотрудничества и карьерного роста",
+
+  "services_3": "Легализация пребывания и работы",
+  "services_3_desc": "Полное сопровождение в процессе легализации: оформление карты побыту, разрешений на работу, воссоединение семьи и другие юридические процедуры",
+
+  "services_4": "Помощь в обмене водительских прав",
+  "services_4_desc": "Содействие в обмене иностранного водительского удостоверения на польское с минимальными сроками и понятным процессом",
+
+  "services_5": "Аутсорсинг HR",
+  "services_5_desc": "Комплексное сопровождение процесса подбора персонала, оформления документов и управления трудовыми ресурсами",
+
+  "services_6": "Аудит и юридическая проверка",
+  "services_6_desc": "Проверка легализации и трудоустройства иностранных работников в вашей компании с целью выявления и устранения возможных нарушений",
+
+  "statistics_title": "Наши достижения",
+
+  "stats_1": "Трудоустроенных кандидатов",
+  "stats_2": "Довольных работодателей",
+  "stats_3": "Успешных процессов легализации",
+  "stats_4": "Актуальных вакансий ежемесячно",
+
+  "banner_subtitle": "С нами всё просто",
+
+  "pricing_title": "Пакеты услуг",
+
+  "pricing_card_1_title": "Помощь в трудоустройстве",
+  "pricing_card_1_price": "Без предоплаты",
+  "pricing_card_1_1": "Доступ к актуальным и проверенным вакансиям",
+  "pricing_card_1_2": "Консультация по вопросам трудоустройства",
+  "pricing_card_1_3": "Помощь в подготовке необходимых документов",
+  "pricing_card_1_4": "Поддержка на всех этапах взаимодействия",
+
+  "pricing_card_2_title": "Полное сопровождение",
+  "pricing_svyaz": "Связаться с нами",
+  "pricing_card_2_price": "от 500",
+  "pricing_card_2_period": "PLN",
+  "pricing_card_2_1": "Подготовка и подача документов на карту побыту",
+  "pricing_card_2_2": "Обжалование отрицательных решений и сопровождение процесса",
+  "pricing_card_2_3": "Помощь при подаче дополнительных документов",
+  "pricing_card_2_4": "Передача и сопровождение дела в соответствующих учреждениях",
+
+  "pricing_card_3_title": "Для работодателей",
+  "pricing_card_3_price": "Индивидуально",
+  "pricing_card_3_period": "По договоренности",
+  "pricing_card_3_1": "Постоянный и временный подбор персонала",
+  "pricing_card_3_2": "Полное сопровождение сотрудников",
+  "pricing_card_3_3": "Аутсорсинг легализации и трудоустройства",
+  "pricing_card_3_4": "Юридический аудит и консультации",
+
+  "testimonials_title": "Отзывы и доверие клиентов",
+
+  "community_cta": "Оставьте заявку и получите бесплатную консультацию от наших специалистов",
+
+  "contact_title": "Чем мы можем вам помочь?",
+  "contact_name": "Имя*",
+  "contact_email": "Email*",
+  "contact_phone": "Телефон*",
+
+  "contact_subject": "Выбранная услуга",
+  "subject_option_1": "Трудоустройство",
+  "subject_option_2": "Легализация",
+  "subject_option_3": "Юридическая консультация",
+  "subject_option_4": "Жилищная помощь",
+  "subject_option_5": "Другое",
+
+  "contact_message": "Сообщение",
+  "contact_checkbox": "Я согласен на обработку персональных данных в соответствии с политикой конфиденциальности",
+  "contact_submit": "Отправить заявку",
+
+  "faq_title": "Часто задаваемые вопросы",
+
+  "faq_1_q": "Сколько времени занимает трудоустройство через ваше агентство?",
+  "faq_1_a": "В среднем процесс занимает от 1 до 3 дней в зависимости от выбранной вакансии и наличия необходимых документов",
+
+  "faq_2_q": "Вы помогаете с легализацией пребывания в Польше?",
+  "faq_2_a": "Да, мы предоставляем полное сопровождение на всех этапах легализации и взаимодействия с государственными органами",
+
+  "faq_3_q": "Какие документы необходимы?",
+  "faq_3_a": "Как правило, требуется паспорт и базовая информация о ваших предпочтениях по работе",
+
+  "faq_4_q": "Я не говорю по-польски — это проблема?",
+  "faq_4_a": "Нет, большинство вакансий не требует знания польского языка, мы подбираем варианты с учетом этого",
+
+  "faq_5_q": "Вы берёте плату за трудоустройство?",
+  "faq_5_a": "Нет, трудоустройство осуществляется без предоплаты, оплата возможна только после начала работы",
+
+  "partners_title": "Наши партнеры",
+  "partners_desc": "Мы сотрудничаем с проверенными работодателями по всей Польше",
+
+  "footer_quick_links": "Навигация",
+  "footer_contact": "Контакты",
+  "footer_follow": "Мы в социальных сетях",
+  "footer_copyright": "© 2025 Sadykov Group. Все права защищены.",
+
+  "blog_title": "Полезная информация и советы",
+
+  "blog_cat_1": "Легализация",
+  "blog_cat_2": "Трудоустройство",
+  "blog_cat_3": "Советы",
+
+  "blog_1_title": "Как получить разрешение на работу в Польше: пошаговое руководство ?",
+  "blog_2_title": "Лучшие вакансии в Польше для иностранных работников ?",
+  "blog_3_title": "Что важно знать перед началом работы за границей ?",
+
+  "data-last": "Подробнее",
+
+  "client-name": "Олойберди",
+  "client-name-2": "Нурбек"
+}
+
+

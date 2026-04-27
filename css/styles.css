@@ -376,10 +376,18 @@ ul {
 #btn{
     width: 220px;
 }
+#btn:hover{
+    transform: translateY(-5px);
+
+}
 
 #btn2{
     background-color: #fff;
 }
+#btn2:hover {
+    transform: translateY(-5px);
+}
+
 .hero-content img{
     position: absolute;
     right: 0px;
@@ -692,14 +700,14 @@ ul {
 
 .services-grid {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .service-column {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
 }
 
 .service-item {
@@ -1150,7 +1158,9 @@ ul {
   .google-review-section {
     padding: 60px 14px;
   }
-
+  .hero-section{
+    height: 115vh;
+  }
   .review-slider-box {
     width: min(90%, 500px);
     padding: clamp(12px, 2vw, 24px);
@@ -1439,7 +1449,10 @@ ul {
     position: relative;
     z-index: 1;
 }
-
+#btnno:hover {
+    background-color: #8ad55f;
+    transform: translateY(-3px);
+}
 
 /* Contact Form */
 .contact {
@@ -1618,9 +1631,15 @@ ul {
     .hero-text h1 span {
         font-size: 2.8rem;
     }
-    
-    .services-grid,
-    .pricing-grid {
+    .service-column{
+        flex: none;
+    }
+    .services-grid {
+        flex-direction: column;
+        height: 243vh;
+
+    }
+    .pricing-grid{
         flex-direction: column;
     }
     
@@ -1765,7 +1784,7 @@ ul {
     }
     
     .hero-text h1 span {
-        font-size: 2.7rem;
+        font-size: 2.6rem;
     }
     
     .classes-grid {
@@ -1774,6 +1793,8 @@ ul {
     
     .service-column {
         flex-direction: column;
+        flex: none;
+        height: ;
     }
     
     .partners-grid {
