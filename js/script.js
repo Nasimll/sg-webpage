@@ -231,7 +231,6 @@ console.log(data);
 
 // default to 'pl'
 document.addEventListener("DOMContentLoaded", () => {
-  localStorage.removeItem("lang");
   const savedLang = localStorage.getItem('lang') || 'pl';
   setLanguage(savedLang);
 });
