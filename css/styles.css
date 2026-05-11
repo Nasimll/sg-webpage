@@ -13,6 +13,7 @@
     --secondary-color: #9AE66E;
     --text-light: #FFFFFF;
     --text-dark: #333333;
+    --muted:    #5a5a55;
     --bg-light: #FFFFFF;
     --bg-dark: #1E2B20;
     --transition: all 0.3s ease;
@@ -22,7 +23,7 @@
 
 body {
     top: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
@@ -30,7 +31,7 @@ body {
 }
 main{
     top: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
@@ -180,6 +181,7 @@ ul {
 }
 
 /* Header Styles */
+
 .header {
     position: fixed;
     padding-top: 100px;
@@ -415,9 +417,6 @@ ul {
     
 }
 
-
-
-
 .twobtn{
     display: flex;
     justify-content: center;
@@ -566,7 +565,6 @@ ul {
   text-align: center;
 }
 
-/* Timeline Section */
 
 
 /* === Timeline Section === */
@@ -1576,15 +1574,25 @@ ul {
 
 .footer-column ul li {
     margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.4s ease;
+    cursor: pointer;
+    
 }
 
 .footer-column ul li a {
     transition: var(--transition);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-column ul li a:hover {
     color: var(--secondary-color);
     padding-left: 5px;
+}
+.footer-column ul li:hover {
+    color: var(--secondary-color);
+    transform: translateX(20px);
+
 }
 
 .footer-column ul li i {
@@ -1794,7 +1802,6 @@ ul {
     .service-column {
         flex-direction: column;
         flex: none;
-        height: ;
     }
     
     .partners-grid {
