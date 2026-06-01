@@ -1679,7 +1679,7 @@ ul {
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1050px) {
     .header-content {
         position: relative;
     }
@@ -1691,7 +1691,7 @@ ul {
         justify-content: center;
         align-items: end;
         position: absolute;
-        top: -230%;
+        top: -170%;
         z-index: -1;
         left: -20px;
         width: 112%;

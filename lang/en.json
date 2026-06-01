@@ -43,8 +43,8 @@
   "services_4_desc": "Assistance in exchanging a driver's license from Uzbekistan, Tajikistan, or another CIS country for a Polish one — fast and hassle-free",
   "services_5": "HR Outsourcing",
   "services_5_desc": "Comprehensive support for recruiting foreign staff, document preparation, and workforce management for Polish employers",
-  "services_6": "Audit & Legal Verification",
-  "services_6_desc": "Verification of the legality of foreign worker employment in your company to identify and resolve violations of Polish law",
+  "services_6": "Audit & Verification",
+  "services_6_desc": "Verifying the legality of the employment of foreign workers in your company, in accordance with the new and old Polish legislation, in order to identify and eliminate violations",
 
 
   "statistics_title": "Our Achievements",
@@ -114,7 +114,7 @@
   "contact_option_placeholder": "Choose a service",
   "contact_option_1": "Employment",
   "contact_option_2": "Legalization",
-  "contact_option_3": "Legal Consultation",
+  "contact_option_3": "Consultation",
   "contact_option_4": "Housing Assistance",
   "contact_option_5": "Other",
   "contact_label_message": "Message",
