@@ -779,3 +779,49 @@ color: var(--green);
   .footer-logo img { height: 70px; }
 }
  
+/* Filter bar */
+.sk-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 0 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sk-filter {
+  padding: 8px 20px;
+  border: 2px solid var(--border);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sk-filter:hover {
+  border-color: var(--lime);
+  color: var(--green);
+}
+
+.sk-filter.is-active {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
+
+/* Loading & error states */
+.sk-loading,
+.sk-load-error {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1rem;
+  color: var(--muted);
+  width: 100%;
+}
+
+.sk-load-error {
+  color: #c0392b;
+}
