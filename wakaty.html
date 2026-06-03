@@ -11,6 +11,78 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
+<!-- ============ HEADER ============ -->
+<header class="header transparent" id="mainHeader">
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo-safed.png" alt="Sadykov Group">
+        </a>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="index.html"         data-i18n="nav_home">Главная</a></li>
+          <li><a href="index.html#about"   data-i18n="nav_about">О нас</a></li>
+          <li><a href="index.html#pricing" data-i18n="nav_services">Услуги</a></li>
+          <li><a href="index.html#otziv"   data-i18n="nav_reviews">Отзывы</a></li>
+          <li><a href="index.html#faq"     data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="#contact-form" class="active" data-i18n="nav_vacancies">Вакансии</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang-switcher" onclick="toggleLangDropdown(event)">
+        <div class="lang-select" id="langLabel">🌐PL</div>
+        <div class="lang-dropdown" id="langMenu">
+          <button onclick="setLanguage('en');event.stopPropagation()">🇬🇧 EN</button>
+          <button onclick="setLanguage('ru');event.stopPropagation()">🇷🇺 RU</button>
+          <button onclick="setLanguage('pl');event.stopPropagation()">🇵🇱 PL</button>
+        </div>
+      </div>
+
+      <div class="header-cta">
+        <a href="#contact-form" class="btn-outline" data-i18n="nav_cta">Kontakt</a>
+      </div>
+
+      <div class="mobile-menu-toggle" id="mobileToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="sk-hero">
+  <p class="sk-hero-eyebrow" data-i18n="hero_eyebrow">Aktualne oferty pracy</p>
+  <h1>
+    <span data-i18n="hero_title">Zatrudnienie cudzoziemców w Polsce — </span>
+    <em data-i18n="hero_title_accent">legalnie i bezpiecznie</em>
+  </h1>
+  <p class="sk-hero-sub" data-i18n="hero_sub">Pomagamy obywatelom Uzbekistanu, Tadżykistanu, Kirgistanu i innych krajów WNP znaleźć legalną pracę w Polsce.</p>
+</div>
+
+<!-- ============ CONTENT ============ -->
+<div class="sk-wrap">
+
+  <!-- CAROUSEL — cards injected dynamically from available vacancies -->
+  <div class="sk-featured">
+    <div class="sk-featured-header">
+      <p class="sk-eyebrow" data-i18n="carousel_eyebrow">Wyróżnione oferty</p>
+      <h2 data-i18n="carousel_title">Najlepsze wakaty dla Ciebie</h2>
+      <p data-i18n="carousel_hint">Najedź na kartę, aby zobaczyć szczegóły</p>
+    </div>
+    <div class="sk-carousel-controls">
+      <button class="sk-arrow" id="skPrev">‹</button>
+      <button class="sk-arrow" id="skNext">›</button>
+    </div>
+    <div class="sk-carousel-viewport">
+      <div class="sk-carousel-track" id="skTrack"></div>
+    </div>
+    <div class="sk-dots" id="skDots"></div>
+  </div>
+
   <!-- FILTER BAR -->
   <div class="sk-filters">
     <button class="sk-filter is-active" data-cat="all">Wszystkie</button>
@@ -20,9 +92,8 @@
     <button class="sk-filter" data-cat="inne">Inne</button>
   </div>
 
-<div class="sk-list" id="skList">
-  <!-- rows injected by jswak.js after fetching from Google Sheets -->
-</div>
+  <!-- VACANCY LIST — rows injected by jswak.js after fetching from Google Sheets -->
+  <div class="sk-list" id="skList"></div>
 
   <!-- FORM -->
   <div class="sk-form-section" id="contact-form">
@@ -64,7 +135,7 @@
       </div>
       <div class="sk-form-submit">
         <button type="submit" class="sk-submit-btn" data-i18n="form_submit">Wyślij wniosek</button>
-       <a class="sk-form-note" data-i18n="form_note" href="privacy-policy.html">*Zgadzam się na przetwarzanie danych osobowych zgodnie z polityką prywatności.</a>
+        <a class="sk-form-note" data-i18n="form_note" href="privacy-policy.html">*Zgadzam się na przetwarzanie danych osobowych zgodnie z polityką prywatności.</a>
       </div>
     </form>
     <div class="sk-form-success" id="skSuccess">
@@ -110,6 +181,7 @@
     </div>
   </div>
 </div>
+
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="container">
@@ -121,11 +193,11 @@
         <div class="footer-column">
           <h3 data-i18n="footer_quick_links">Быстрые ссылки</h3>
           <ul>
-            <li><a href="index.html"         aria-label="Open Home"           data-i18n="nav_home">Главная</a></li>
-            <li><a href="index.html#about"   aria-label="Open About Section"  data-i18n="nav_about">О нас</a></li>
+            <li><a href="index.html"         aria-label="Open Home"             data-i18n="nav_home">Главная</a></li>
+            <li><a href="index.html#about"   aria-label="Open About Section"    data-i18n="nav_about">О нас</a></li>
             <li><a href="index.html#pricing" aria-label="Open Services Section" data-i18n="nav_services">Услуги</a></li>
-            <li><a href="index.html#otziv"   aria-label="Open Review Section"  data-i18n="nav_reviews">Отзывы</a></li>
-            <li><a href="index.html#faq"     aria-label="Open FAQ Section"    data-i18n="nav_faq">FAQ</a></li>
+            <li><a href="index.html#otziv"   aria-label="Open Review Section"   data-i18n="nav_reviews">Отзывы</a></li>
+            <li><a href="index.html#faq"     aria-label="Open FAQ Section"      data-i18n="nav_faq">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-column">
