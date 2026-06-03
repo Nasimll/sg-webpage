@@ -1,7 +1,4 @@
-/* ============================================
-   SADYKOV GROUP — jswak.js
-   ============================================ */
-
+// Translations for wakaty.html — inline object, no external fetch needed
 var TRANSLATIONS = {
   pl: {
     nav_home:"Strona główna", nav_services:"Usługi", nav_vacancies:"Wakaty",
@@ -95,10 +92,7 @@ var TRANSLATIONS = {
   }
 };
 
-/* ============================================
-   VACANCY DATA — all 27 vacancies in 3 languages
-   id matches data-vacancy-id on each .sk-row
-   ============================================ */
+// All 27 vacancies in 3 languages — id matches data-vacancy-id on each .sk-row
 var VACANCIES = {
   v1: {
     ru: { title:"Дорожный работник", location:"Małkinia Górna (80 км от Варшавы)", salary:"29 зл/ч нетто", type:"12ч/день, 6 дней", b1:"Бесплатное жильё (4-5 чел)", b2:"Бесплатный горячий обед", b3:"Бесплатный довоз до работы", desc:"Строительная компания по инфраструктуре. Укладка асфальта, строительство мостов, металлоконструкции, арматурные работы. Опыт на стройке обязателен." },
@@ -238,45 +232,39 @@ var VACANCIES = {
 };
 
 
-
 function setLanguage(lang) {
   var data = TRANSLATIONS[lang] || TRANSLATIONS.pl;
   currentLang = lang;
 
-  /* 1. Translate all elements with data-i18n */
+  // Apply translations to data-i18n elements (skip nested ones)
   document.querySelectorAll('[data-i18n]').forEach(function(el) {
     if (el.querySelector('[data-i18n]')) return;
     var key = el.getAttribute('data-i18n');
     if (data[key] !== undefined) el.textContent = data[key];
   });
 
-  /* 2. Translate every row using VACANCIES data + cat label + status + buttons */
+  // Update each vacancy row — title, meta, location, status, badge, buttons
   document.querySelectorAll('.sk-row').forEach(function(row) {
     var vid = row.dataset.vacancyId;
     var v = (vid && VACANCIES[vid] && VACANCIES[vid][lang]) ? VACANCIES[vid][lang] : null;
 
-    /* Row title from VACANCIES */
     if (v) {
       var titleEl = row.querySelector('.sk-row-title');
       if (titleEl) titleEl.textContent = v.title;
 
-      /* Row meta: salary + first part of type */
       var metaEl = row.querySelector('.sk-row-meta');
       if (metaEl) metaEl.textContent = v.salary + ' · ' + v.type;
 
-      /* Row location */
       var locEl = row.querySelector('.sk-row-location');
       if (locEl) locEl.textContent = '📍 ' + v.location;
     }
 
-    /* Status badge — translated via data-i18n on the status element */
     var statusEl = row.querySelector('.sk-status');
     if (statusEl) {
       var avail = row.dataset.available === 'true';
       statusEl.textContent = avail ? data.status_active : data.status_inactive;
     }
 
-    /* Category badge — read original cat label and look up translation */
     var badgeEl = row.querySelector('.sk-row-badge');
     if (badgeEl) {
       var cat = row.dataset.cat;
@@ -284,7 +272,6 @@ function setLanguage(lang) {
       if (data[key]) badgeEl.textContent = data[key];
     }
 
-    /* Buttons */
     var detailsBtn = row.querySelector('.sk-details-btn');
     if (detailsBtn) detailsBtn.textContent = data.btn_details;
 
@@ -301,7 +288,7 @@ function setLanguage(lang) {
   var dd = document.getElementById('langMenu');
   if (dd) dd.style.display = 'none';
 
-  /* Rebuild carousel so card text is in new language */
+  // Rebuild carousel in new language
   if (typeof window.skBuildCarousel === 'function') window.skBuildCarousel();
 }
 
@@ -358,7 +345,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   if (navMenu) navMenu.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', closeMenu); });
 
-  /* 4. COORDINATOR TOGGLE — password-protected switch */
+  /* 4. Coordinator toggle — password-protected availability switch */
   var COORD_PASSWORD = 'sadykov2024';
 
   function loadStates() {
@@ -384,11 +371,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (applyBtn) { applyBtn.classList.add('dimmed'); applyBtn.textContent = 'Zapisz się →'; }
       if (inp) inp.checked = false;
     }
-    /* Sync carousel whenever a row state changes */
     syncCarousel();
   }
 
-  /* Add toggle switch as first element of each row */
   var states = loadStates();
   var swCount = 0;
 
@@ -427,7 +412,7 @@ document.addEventListener('DOMContentLoaded', function() {
     swLabel.addEventListener('click', function(e) { e.stopPropagation(); });
   });
 
-  /* 5. CAROUSEL — only shows available vacancies */
+  /* 5. Carousel — shows only available vacancies */
   var track    = document.getElementById('skTrack');
   var prevBtn  = document.getElementById('skPrev');
   var nextBtn  = document.getElementById('skNext');
@@ -436,11 +421,9 @@ document.addEventListener('DOMContentLoaded', function() {
   function buildCarousel() {
     if (!track || !prevBtn || !nextBtn || !dotsWrap) return;
 
-    /* Clear existing */
     track.innerHTML = '';
     dotsWrap.innerHTML = '';
 
-    /* Collect available rows */
     var availableRows = [];
     document.querySelectorAll('.sk-row').forEach(function(row) {
       if (row.dataset.available === 'true') availableRows.push(row);
@@ -452,7 +435,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     track.closest('.sk-featured').style.display = '';
 
-    /* Build cards from available rows — using translated VACANCIES data */
     var t = TRANSLATIONS[currentLang] || TRANSLATIONS.pl;
     availableRows.forEach(function(row) {
       var img = row.dataset.img || '';
@@ -465,9 +447,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var b1     = v ? v.b1       : (row.dataset.b1 || '');
       var b2     = v ? v.b2       : (row.dataset.b2 || '');
       var b3     = v ? v.b3       : (row.dataset.b3 || '');
-      var meta   = salary;
 
-      /* Translated badge */
       var cat = row.dataset.cat;
       var key = 'cat_' + (cat === 'magazyn' ? 'warehouse' : cat === 'budowa' ? 'construction' : cat === 'produkcja' ? 'production' : cat === 'transport' ? 'transport' : 'other');
       var badge = t[key] || cat;
@@ -496,7 +476,7 @@ document.addEventListener('DOMContentLoaded', function() {
       track.appendChild(card);
     });
 
-    /* Clone for infinite scroll */
+    // Clone cards for infinite scroll effect
     var origCards = Array.from(track.querySelectorAll('.sk-card'));
     var N = origCards.length;
     origCards.forEach(function(c) {
@@ -506,7 +486,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var cl = c.cloneNode(true); cl.setAttribute('aria-hidden','true'); track.insertBefore(cl, track.firstChild);
     });
 
-    /* Touch reveal on mobile */
+    // Tap-to-reveal on mobile
     if ('ontouchstart' in window) {
       track.querySelectorAll('.sk-card').forEach(function(card) {
         card.addEventListener('click', function(e) {
@@ -562,13 +542,11 @@ document.addEventListener('DOMContentLoaded', function() {
     goTo(idx, false);
   }
 
-  /* syncCarousel rebuilds the carousel whenever availability changes */
   function syncCarousel() { buildCarousel(); }
   window.skBuildCarousel = buildCarousel;
-
   buildCarousel();
 
-  /* 6. Filter */
+  /* 6. Category filter */
   document.querySelectorAll('.sk-filter').forEach(function(btn) {
     btn.addEventListener('click', function() {
       var cat = btn.dataset.cat;
@@ -585,7 +563,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  /* 7. POPUP MODAL */
+  /* 7. Vacancy detail popup */
   var backdrop   = document.getElementById('skBackdrop');
   var modalClose = document.getElementById('skModalClose');
   function openPopup(row) {
@@ -594,51 +572,42 @@ document.addEventListener('DOMContentLoaded', function() {
     var avail = d.available === 'true';
     var t    = TRANSLATIONS[currentLang] || TRANSLATIONS.pl;
 
-    /* Get vacancy translated data — falls back to dataset if not found */
     var vid  = d.vacancyId;
     var vdata = (vid && VACANCIES[vid] && VACANCIES[vid][currentLang])
               ? VACANCIES[vid][currentLang]
               : { title: d.title||'', location: d.location||'', salary: d.salary||'',
                   type: d.type||'', b1: d.b1||'', b2: d.b2||'', b3: d.b3||'', desc: d.desc||'' };
 
-    /* Cover image */
     var img = document.getElementById('skModalImg');
     if (img) { img.src = d.img || ''; img.alt = vdata.title; }
 
-    /* Badge — translated via data-i18n key on badge element */
     var badgeEl  = row.querySelector('.sk-row-badge');
     var badgeKey = badgeEl ? badgeEl.getAttribute('data-i18n') : '';
     var badgeText = (badgeKey && t[badgeKey]) ? t[badgeKey] : (badgeEl ? badgeEl.textContent : '');
     var catEl = document.getElementById('skModalCat');
     if (catEl) catEl.textContent = badgeText;
 
-    /* Title — from VACANCIES translated data */
     var titleEl = document.getElementById('skModalTitle');
     if (titleEl) titleEl.textContent = vdata.title;
 
-    /* Availability */
     var av = document.getElementById('skModalAvail');
     if (av) {
       av.textContent = avail ? t.modal_active : t.modal_inactive;
       av.className   = 'sk-modal-avail ' + (avail ? 'open' : 'closed');
     }
 
-    /* Meta values — from VACANCIES translated data */
     var loc = document.getElementById('skModalLoc');    if (loc) loc.textContent = vdata.location;
     var sal = document.getElementById('skModalSalary'); if (sal) sal.textContent = vdata.salary;
     var typ = document.getElementById('skModalType');   if (typ) typ.textContent = vdata.type;
 
-    /* Meta labels — from TRANSLATIONS */
     var labels = document.querySelectorAll('.sk-modal-meta-label');
     if (labels[0]) labels[0].textContent = t.modal_location;
     if (labels[1]) labels[1].textContent = t.modal_salary;
     if (labels[2]) labels[2].textContent = t.modal_type;
 
-    /* Description */
     var desc = document.getElementById('skModalDesc');
     if (desc) desc.textContent = vdata.desc;
 
-    /* Benefits */
     var ben = document.getElementById('skModalBenefits');
     if (ben) {
       ben.innerHTML = '';
@@ -651,7 +620,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
 
-    /* Footer CTA */
     var foot = document.getElementById('skModalFooter');
     if (foot) {
       foot.innerHTML = '';
@@ -678,7 +646,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (backdrop) backdrop.addEventListener('click', function(e) { if (e.target === backdrop) closePopup(); });
   document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePopup(); });
 
-  /* 8. Form */
+  /* 8. Contact form */
   var SHEET_URL = 'https://script.google.com/macros/s/AKfycbzfuANduorYN8_uOzeV5xMshp3_kozG93FA6CvADGpeT9s_EkY4QLJK8jn6Kq3Zbg_J8A/exec';
   var form = document.getElementById('skForm');
   var successBox = document.getElementById('skSuccess');
@@ -697,4 +665,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-}); /* end DOMContentLoaded */
+});

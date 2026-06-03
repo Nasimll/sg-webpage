@@ -1,13 +1,7 @@
-console.log("VSCRIPT LOADED");
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const ADMIN_CODE = "SG22Rahmatinga";
-
-  // paste your /exec URL here
-  const API_URL = "YOUR_WEB_APP_URL_HERE";
+  const API_URL = "YOUR_WEB_APP_URL_HERE"; // replace with your Apps Script /exec URL
 
   let projects = [];
   let vacancies = [];
@@ -24,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }).then(r => r.json());
   }
 
-  // LOAD DATA
   function loadData() {
     apiGet("list").then(data => {
       projects = data.projects;
@@ -34,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // RENDER OPTIONS
   function renderProjectChoices() {
     const box = document.getElementById("projectChoiceRadios");
     box.innerHTML = "";
@@ -48,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // RENDER CARDS + ROWS
   function renderProjectsAndVacancies() {
     const container = document.getElementById("projectsContainer");
     container.innerHTML = "";
@@ -75,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         track.innerHTML += `
           <article class="vacancy-card" data-id="${v.id}">
             ${v.imageUrl ? `<img src="${v.imageUrl}" class="vacancy-card-image">`
-                          : `<div class="vacancy-card-image vacancy-card-image--placeholder"></div>`}
+                        : `<div class="vacancy-card-image vacancy-card-image--placeholder"></div>`}
             <div class="vacancy-tag ${v.status === "available" ? "vacancy-tag--available" : "vacancy-tag--not_available"}">
               ${v.status.toUpperCase()}
             </div>
@@ -89,15 +80,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ADD PROJECT
   document.getElementById("addProjectForm").onsubmit = e => {
     e.preventDefault();
     const char = document.getElementById("fieldProjectChar").value.toUpperCase();
-
     apiPost("addProject", { projectChar: char }).then(() => loadData());
   };
 
-  // ADD VACANCY
   document.getElementById("addVacancyForm").onsubmit = e => {
     e.preventDefault();
 
@@ -116,15 +104,12 @@ document.addEventListener("DOMContentLoaded", () => {
     apiPost("addVacancy", { vacancy: v }).then(() => loadData());
   };
 
-  // DELETE VACANCY
   document.addEventListener("click", e => {
     const del = e.target.closest("[data-delete]");
     if (!del) return;
-
     const id = del.dataset.delete;
     apiPost("deleteVacancy", { id }).then(() => loadData());
   });
 
-  // FIRST LOAD
   loadData();
 });
